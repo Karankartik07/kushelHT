@@ -1,69 +1,22 @@
-// app/page.js (Simplified version to work with layout.js)
-
 "use client";
 import Script from "next/script";
 import { useEffect } from "react";
-import Footer from "./COMMON/Footer";
-import Navbar from "./COMMON/Navbar";
-import NewBanner from "./components/Home/Banner";
-import CompaniesSlider from "./components/Home/CompaniesSlider";
-import CustomSolution from "./components/Home/CustomSolution";
-import HomeFAQ from "./components/Home/HomeFAQ";
-import OurTechno from "./components/Home/OurTechno";
-import Popup from "./components/Home/PopUp/PopUp";
-import Portfolio from "./components/Home/Portfolio";
-import Portfolio2 from "./components/Home/Portfolio2";
-import RealSuccess from "./components/Home/RealSuccess";
-import Technology from "./components/Home/Technology";
-import Testimonials from "./components/Home/Testimonials";
-import HomeForm from "./components/Home/HomeForm";
+import dynamic from "next/dynamic";
 // Critical above-the-fold components - load with SSR for faster initial render
-// const Navbar = dynamic(() => import("./COMMON/Navbar"), {
-//   ssr: true,
-// });
-// const HomeNewBanner = dynamic(() => import("./components/Home/HomeNewBanner"), {
-//   ssr: true,
-// });
-// const HomeTech = dynamic(() => import("./components/Home/HomeTech"), {
-//   ssr: true,
-// });
-// const Homeslidernew = dynamic(() => import("./components/Home/HomeSliderNew"), {
-//   ssr: true,
-// });
-
-// const Footer = dynamic(() => import("./COMMON/Footer"), { ssr: false });
-// const Home2AskQuestion = dynamic(
-//   () => import("./components/Home/Home2AskQuestion"),
-//   { ssr: false }
-// );
-// const Home2Section10 = dynamic(
-//   () => import("./components/Home/Home2Section10"),
-//   { ssr: false }
-// );
-// const Home2Section5 = dynamic(() => import("./components/Home/Home2Section5"), {
-//   ssr: false,
-// });
-// const Home2Testimonial = dynamic(
-//   () => import("./components/Home/Home2Testimonial"),
-//   { ssr: false }
-// );
-// const HomeCardSection = dynamic(
-//   () => import("./components/Home/HomeCardSection"),
-//   { ssr: false }
-// );
-// const HomeForm = dynamic(() => import("./components/Home/HomeForm"), {
-//   ssr: false,
-// });
-// const HomeSecCard = dynamic(() => import("./components/Home/HomeSecCard"), {
-//   ssr: false,
-// });
-// const PopUp = dynamic(() => import("./components/Home/PopUp/PopUp"), {
-//   ssr: false,
-// });
-// const CompaniesSlider = dynamic(
-//   () => import("./components/Home/slider/CompaniesSlider"),
-//   { ssr: false }
-// );
+const Navbar = dynamic(() => import("./COMMON/Navbar"), { ssr: true });
+const Footer = dynamic(() => import("./COMMON/Footer"), { ssr: true });
+const NewBanner = dynamic(() => import("./components/Home/Banner"), { ssr: true });
+const CompaniesSlider = dynamic(() => import("./components/Home/CompaniesSlider"), { ssr: true });
+const CustomSolution = dynamic(() => import("./components/Home/CustomSolution"), { ssr: true });
+const HomeFAQ = dynamic(() => import("./components/Home/HomeFAQ"), { ssr: true });
+const OurTechno = dynamic(() => import("./components/Home/OurTechno"), { ssr: true });
+const Popup = dynamic(() => import("./components/Home/PopUp/PopUp"), { ssr: true });
+const Portfolio = dynamic(() => import("./components/Home/Portfolio"), { ssr: true });
+const Portfolio2 = dynamic(() => import("./components/Home/Portfolio2"), { ssr: true });
+const RealSuccess = dynamic(() => import("./components/Home/RealSuccess"), { ssr: true });
+const Technology = dynamic(() => import("./components/Home/Technology"), { ssr: true });
+const Testimonials = dynamic(() => import("./components/Home/Testimonials"), { ssr: true });
+const HomeForm = dynamic(() => import("./components/Home/HomeForm"), { ssr: true });
 
 const HomePage = ({ props }) => {
   const phoneNumber = "9045301702";
@@ -161,20 +114,20 @@ const HomePage = ({ props }) => {
 
       <Popup />
 
-        <Navbar />
-        <NewBanner/>
-        <OurTechno/>
-        <Portfolio/>
-        <RealSuccess/>
-        <Portfolio2/>
-        <CustomSolution/>
-        <Technology/>
-        <CompaniesSlider/>
-        <Testimonials/>
-        <HomeFAQ/>
-        <HomeForm/>
-        <Footer/>
-     
+      {/* All other components */}
+      <Navbar />
+      <NewBanner />
+      <OurTechno />
+      <Portfolio />
+      <RealSuccess />
+      <Portfolio2 />
+      <CustomSolution />
+      <Technology />
+      <CompaniesSlider />
+      <Testimonials />
+      <HomeFAQ />
+      <HomeForm />
+      <Footer />
     </>
   );
 };
