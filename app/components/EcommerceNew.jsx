@@ -3,8 +3,6 @@ import BlogSection from '../COMMON/BlogSection/BlogSection'
 import Footer from '../COMMON/Footer'
 import Navbar from '../COMMON/Navbar'
 import UseAccorrodian from '../COMMON/UseAccorrodian'
-import HomeCardSection from '../components/Home/HomeCardSection'
-import HomeFlax from '../components/Home/HomeFlax'
 import HomeForm from '../components/Home/HomeForm'
 import { whyEcommerceByKDSHeading, whyEcommerceCommereByKDS } from '../data/data'
 import BigBanner6 from "../service/bigcommerce-development/BigBanner6/page"
@@ -45,9 +43,9 @@ const Page = () => {
         <Banner2/>
         <Banner3/>
         <Banner4 />
-        <HomeFlax/>
+        {/* <HomeFlax/> */}
         <Banner9 page='eCommerce'/>
-        <HomeCardSection/>
+        {/* <HomeCardSection/> */}
         <Banner11/>
        
         <Banner5/>
