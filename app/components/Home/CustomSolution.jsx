@@ -1,34 +1,29 @@
-import "./askques.css"; // Using CSS Modules
-import Image from "next/image"; // Import Next.js Image component
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+"use client";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import { useEffect, useState } from "react";
 
 const data = [
-
   {
     img: "https://res.cloudinary.com/dbpqjxox7/image/upload/v1738229461/s10item1_ridh3n.webp",
     title: "E-commerce",
     desc: "We deliver custom-built eCommerce solutions tailored for performance and growth.",
     alt: "ecommerce website product detail page icon",
   },
-
   {
     img: "https://res.cloudinary.com/dbpqjxox7/image/upload/v1738229525/hospital1_lui9s4.webp",
     title: "Hospitality",
     desc: "Our hospitality tech solutions come with seamless, personalized guest journeys.",
     alt: "ecommerce website development for Hospitality industry",
   },
-
   {
     img: "https://res.cloudinary.com/dbpqjxox7/image/upload/v1738229568/real1_haeopa.webp",
     title: "Real Estate",
     desc: "Explore our real estate platforms that accelerate property deals and virtual experiences.",
     alt: "Real estate ecommerce website development project image",
   },
-
   {
     img: "https://res.cloudinary.com/dbpqjxox7/image/upload/v1738229590/healthcare_j4bcto.webp",
     title: "Healthcare",
@@ -86,31 +81,31 @@ const data = [
 ];
 
 function IndustryCard({ img, alt, title, desc }) {
-
-
   return (
-    <div className="industries-services">
-      <Image
-        loading="lazy"
-        src={img}
-        alt={alt}
-        className="itemImage"
-        width={300}
-        height={200}
-      />
-      <div className="itemdata">
-        <div className="dtitlhead">
-          <span className="industries-card-title">{title}</span>
-        </div>
-        <p className="industries-card-para">{desc}</p>
+    <div className="border border-gray-300 rounded-md p-4 cursor-pointer hover:border-blue-600 hover:bg-gray-100/60 transition">
+      <div className="flex flex-col">
+        {/* Small icon (35x35, margin-bottom 10px) */}
+        <Image
+          loading="lazy"
+          src={img}
+          alt={alt}
+          width={35}
+          height={35}
+          className="w-[35px] h-[35px] mb-2.5 object-contain"
+        />
+
+        {/* Text */}
+        <span className="text-lg font-semibold text-gray-900">{title}</span>
+        <p className="text-sm text-gray-700 leading-6 mt-2">{desc}</p>
       </div>
     </div>
   );
 }
 
-function Home2Section10({ heading, heading1, para }) {
-
-  
+function CustomSolution() {
+  const heading = "Custom Solutions Crafted for Every Industry";
+  const para =
+    "Our eCommerce solutions are not confined to any specific industry or business domain as we have delivered hundreds of project catered to more than 15 industry.";
   const [showSlider, setShowSlider] = useState(true);
 
   useEffect(() => {
@@ -122,51 +117,49 @@ function Home2Section10({ heading, heading1, para }) {
       }
     };
 
-    // run once on mount
     handleResize();
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <section className="h2s10wrap">
-      <div className="h2s10cont">
-        <div className="s10top1">
-          <h3 className="primary-heading">{heading}</h3>
-          <h3>{heading1}</h3>
-          <p className="secondary-heading">{para}</p>
+    <section className="bg-white w-full">
+      <div className="max-w-[1720px] mx-auto px-6 py-12 md:px-10">
+        {/* Heading */}
+        <div className="flex flex-col gap-3 text-center">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+            {heading}
+          </h3>
+          <p className="text-base md:text-lg text-gray-700">{para}</p>
         </div>
-        {
-          showSlider && <div className="industries-services-container">
+
+        {/* Grid / Swiper */}
+        {showSlider ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
             {data.map((d, i) => (
               <IndustryCard key={i} {...d} />
             ))}
           </div>
-        }
-        {
-          !showSlider && <Swiper
-          modules={[Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1}
-          centeredSlides={true}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          className="mobile-industries-container extraclasHide"
-        >
-          {data.map((d, i) => (
-            <SwiperSlide key={i}>
-              <IndustryCard {...d} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        }
+        ) : (
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={20}
+            slidesPerView={1}
+            centeredSlides
+            loop
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            className="mt-8"
+          >
+            {data.map((d, i) => (
+              <SwiperSlide key={i}>
+                <IndustryCard {...d} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
       </div>
     </section>
   );
 }
 
-export default Home2Section10;
+export default CustomSolution;

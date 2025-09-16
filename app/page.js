@@ -1,57 +1,69 @@
 // app/page.js (Simplified version to work with layout.js)
 
 "use client";
-import Image from "next/image";
 import Script from "next/script";
 import { useEffect } from "react";
-import dynamic from "next/dynamic";
+import Footer from "./COMMON/Footer";
+import Navbar from "./COMMON/Navbar";
+import NewBanner from "./components/Home/Banner";
+import CompaniesSlider from "./components/Home/CompaniesSlider";
+import CustomSolution from "./components/Home/CustomSolution";
+import HomeFAQ from "./components/Home/HomeFAQ";
+import OurTechno from "./components/Home/OurTechno";
+import Popup from "./components/Home/PopUp/PopUp";
+import Portfolio from "./components/Home/Portfolio";
+import Portfolio2 from "./components/Home/Portfolio2";
+import RealSuccess from "./components/Home/RealSuccess";
+import Technology from "./components/Home/Technology";
+import Testimonials from "./components/Home/Testimonials";
+import HomeForm from "./components/Home/HomeForm";
 // Critical above-the-fold components - load with SSR for faster initial render
-const Navbar = dynamic(() => import("./COMMON/Navbar"), {
-  ssr: true,
-});
-const HomeNewBanner = dynamic(() => import("./components/Home/HomeNewBanner"), {
-  ssr: true,
-});
-const HomeTech = dynamic(() => import("./components/Home/HomeTech"), {
-  ssr: true,
-});
-const Homeslidernew = dynamic(() => import("./components/Home/HomeSliderNew"), {
-  ssr: true,
-});
+// const Navbar = dynamic(() => import("./COMMON/Navbar"), {
+//   ssr: true,
+// });
+// const HomeNewBanner = dynamic(() => import("./components/Home/HomeNewBanner"), {
+//   ssr: true,
+// });
+// const HomeTech = dynamic(() => import("./components/Home/HomeTech"), {
+//   ssr: true,
+// });
+// const Homeslidernew = dynamic(() => import("./components/Home/HomeSliderNew"), {
+//   ssr: true,
+// });
 
-const Footer = dynamic(() => import("./COMMON/Footer"), { ssr: false });
-const Home2AskQuestion = dynamic(
-  () => import("./components/Home/Home2AskQuestion"),
-  { ssr: false }
-);
-const Home2Section10 = dynamic(
-  () => import("./components/Home/Home2Section10"),
-  { ssr: false }
-);
-const Home2Section5 = dynamic(() => import("./components/Home/Home2Section5"), {
-  ssr: false,
-});
-const Home2Testimonial = dynamic(
-  () => import("./components/Home/Home2Testimonial"),
-  { ssr: false }
-);
-const HomeCardSection = dynamic(
-  () => import("./components/Home/HomeCardSection"),
-  { ssr: false }
-);
-const HomeForm = dynamic(() => import("./components/Home/HomeForm"), {
-  ssr: false,
-});
-const HomeSecCard = dynamic(() => import("./components/Home/HomeSecCard"), {
-  ssr: false,
-});
-const PopUp = dynamic(() => import("./components/Home/PopUp/PopUp"), {
-  ssr: false,
-});
-const CompaniesSlider = dynamic(
-  () => import("./components/Home/slider/CompaniesSlider"),
-  { ssr: false }
-);
+// const Footer = dynamic(() => import("./COMMON/Footer"), { ssr: false });
+// const Home2AskQuestion = dynamic(
+//   () => import("./components/Home/Home2AskQuestion"),
+//   { ssr: false }
+// );
+// const Home2Section10 = dynamic(
+//   () => import("./components/Home/Home2Section10"),
+//   { ssr: false }
+// );
+// const Home2Section5 = dynamic(() => import("./components/Home/Home2Section5"), {
+//   ssr: false,
+// });
+// const Home2Testimonial = dynamic(
+//   () => import("./components/Home/Home2Testimonial"),
+//   { ssr: false }
+// );
+// const HomeCardSection = dynamic(
+//   () => import("./components/Home/HomeCardSection"),
+//   { ssr: false }
+// );
+// const HomeForm = dynamic(() => import("./components/Home/HomeForm"), {
+//   ssr: false,
+// });
+// const HomeSecCard = dynamic(() => import("./components/Home/HomeSecCard"), {
+//   ssr: false,
+// });
+// const PopUp = dynamic(() => import("./components/Home/PopUp/PopUp"), {
+//   ssr: false,
+// });
+// const CompaniesSlider = dynamic(
+//   () => import("./components/Home/slider/CompaniesSlider"),
+//   { ssr: false }
+// );
 
 const HomePage = ({ props }) => {
   const phoneNumber = "9045301702";
@@ -147,71 +159,22 @@ const HomePage = ({ props }) => {
         `}
       </Script>
 
-      <PopUp />
+      <Popup />
 
-      <main role="main" className="home-main">
         <Navbar />
-        <HomeNewBanner />
-        <HomeTech />
-        {/* <HomeVision /> */}
-        <Homeslidernew />
-        {/* <HomeSlider /> */}
-        <Home2Section5 />
-        {/* <HomeFlax /> */}
-        <HomeCardSection />
-        <HomeSecCard />
-        {/* <ScrollSection /> */}
-        <Home2Section10
-          heading={"Custom Solutions Crafted for Every Industry"}
-          para={
-            "Our eCommerce solutions are not confined to any specific industry or business domain as we have delivered hundreds of project catered to more than 15 industry."
-          }
-        />
-        <CompaniesSlider />
-        <Home2Testimonial />
-        <Home2AskQuestion />
-        {/* WhatsApp and Call buttons */}
-        <section
-          className="whtsApBtns"
-          role="region"
-          aria-label="Contact buttons"
-        >
-          <button
-            onClick={whatAppHandler}
-            aria-label="Chat with us on WhatsApp"
-            title="Chat with us on WhatsApp"
-            type="button"
-          >
-            <Image
-              className="what-image-universal"
-              src="https://res.cloudinary.com/dbpqjxox7/image/upload/v1738230407/whatsapp_ztk2oe.png"
-              alt="WhatsApp chat icon"
-              title="Contact us on WhatsApp"
-              width={50}
-              height={50}
-              loading="lazy"
-            />
-          </button>
-          <button
-            onClick={callHandler}
-            aria-label="Call us now"
-            title="Call us now"
-            type="button"
-          >
-            <Image
-              src="https://res.cloudinary.com/dbpqjxox7/image/upload/v1738230446/telephone_wnquao.png"
-              alt="Phone call icon"
-              title="Call us now"
-              width={50}
-              height={50}
-              id="callBlinking"
-              loading="lazy"
-            />
-          </button>
-        </section>
-        <HomeForm />
-        <Footer />
-      </main>
+        <NewBanner/>
+        <OurTechno/>
+        <Portfolio/>
+        <RealSuccess/>
+        <Portfolio2/>
+        <CustomSolution/>
+        <Technology/>
+        <CompaniesSlider/>
+        <Testimonials/>
+        <HomeFAQ/>
+        <HomeForm/>
+        <Footer/>
+     
     </>
   );
 };

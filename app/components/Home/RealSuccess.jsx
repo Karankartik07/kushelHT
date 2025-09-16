@@ -1,8 +1,8 @@
 "use client";
+import Image from "next/image";
 import React from "react";
-import "./Homeslidernew.css";
 
-export default function Homeslidernew() {
+export default function RealSuccess() {
   const services = [
     {
       icon: "https://res.cloudinary.com/dal5dlztv/image/upload/v1748282768/Mask_group_84_wktybx.png",
@@ -74,26 +74,40 @@ export default function Homeslidernew() {
   ];
 
   return (
-    <section className="services-section">
-      <h2>Our Services</h2>
-      <p></p>
+    <section className="text-center px-6 sm:px-[60px] py-16 max-w-[1720px] mx-auto">
+      <h2 className="text-[28px] font-bold mb-2 text-[#111] text-left sm:text-center sm:text-[24px]">
+        Real Success, Real Impact
+      </h2>
+      <p className="text-[#555] text-[16px] max-w-[750px] mx-auto text-left sm:text-center leading-relaxed mb-10">
+        Have a look on our stories of success
+      </p>
 
-      <div className="services-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {services.map((service, index) => (
-          <div className="service-cardN" key={index}>
-            <img
+          <div
+            key={index}
+            className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm text-left hover:border-indigo-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          >
+            <Image
+            width={50}
+            height={50}
+              
               src={service.icon}
               alt={service.title}
-              className="service-icon"
+              className="w-[50px] h-[50px] mb-5"
             />
-            <h3>{service.title}</h3>
-            {/* <p>{service.desc}</p> */}
+            <h3 className="text-[18px] font-semibold text-[#111] mb-3">
+              {service.title}
+            </h3>
 
             {service.spanTag && (
-              <div className="span-tags">
+              <div className="mt-3 space-y-2 text-sm text-gray-700">
                 {service.spanTag.map((tag, i) => (
-                  <span key={i} className="service-tag">
-                   • {tag} <br></br>{" "}
+                  <span
+                    key={i}
+                    className="block text-[15px] leading-relaxed"
+                  >
+                    • {tag}
                   </span>
                 ))}
               </div>

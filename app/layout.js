@@ -1,5 +1,6 @@
 import Script from "next/script";
-import "./globals.css"
+// import "./globals.css"
+import "./tailwind.css"
 import { ToastContainer } from "react-toastify";
 import { Poppins } from "next/font/google";
 
