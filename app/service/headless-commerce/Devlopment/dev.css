@@ -1,0 +1,177 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.developmental {
+  text-align: center;
+  padding: 0px 0px;
+  background-color: #e8f2f5;
+}
+
+.subset {
+  max-width: 1720px;
+  padding: 50px 50px;
+  margin: auto;
+}
+
+.developmental-title {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 700;
+  color: #1a202c;
+  padding-top: 12px;
+}
+
+.developmental-subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #111;
+}
+
+.developmental-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+  margin-top: 40px;
+}
+
+.developmental-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2563eb;
+  transition: transform 0.3s ease-in-out;
+}
+
+.developmental-card:hover {
+  transform: scale(1.05);
+}
+
+.developmental-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.developmental-image-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.developmental-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.developmental-points-list {
+  padding: 0;
+  list-style: none;
+}
+
+.developmental-point {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.developmental-icon {
+  font-size: 12px;
+  color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .developmental-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .developmental {
+    padding: 20px;
+  }
+
+  .developmental-title {
+    font-size: 24px;
+  }
+
+  .developmental-subtitle {
+    font-size: 18px;
+  }
+
+  .developmental-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .developmental-card h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .developmental {
+    padding: 16px;
+  }
+
+  .developmental-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .developmental-subtitle {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .developmental-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .developmental-card {
+    padding: 16px;
+  }
+
+  .developmental-card h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .developmental-point {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .developmental-icon {
+    font-size: 11px;
+  }
+
+  .developmental-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .developmental-title {
+    font-size: 18px;
+  }
+
+  .developmental-subtitle {
+    font-size: 14px;
+  }
+
+  .developmental-point {
+    font-size: 13px;
+  }
+}

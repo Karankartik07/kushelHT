@@ -1,0 +1,148 @@
+.spot-ssec--2 {
+    max-width: 1240px;
+    width: 100%;
+   margin: auto;
+    background-color: #ecf1f4;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .spot-headless-ccon--2-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .spot-audit-img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+ #border-radius-img{
+  border-radius: 50%;
+ }
+  
+  .spot-con--2-div-contentt {
+    width: 50%;
+    min-width: 320px;
+    text-align: left;
+  }
+  
+  .spot-con--2-div-contentt h3 {
+    font-weight: 600;
+    color: #111;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .spot-btn-auditCom {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid #0c61ff;
+    font-size: 18px;
+    background-color: #0c61ff;
+    color: rgba(255, 255, 255, 0.873);
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .spot-btn-auditCom:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .spot-ssec--2 {
+      padding: 30px;
+      margin: 0;
+    }
+    .spot-coon--2{
+      width: 100%;
+  }
+  
+    .spot-headless-ccon--2-div {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .spot-con--2-div-contentt {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .spot-audit-img {
+      width: 220px;
+    }
+  
+    .spot-con--2-div-contentt h3 {
+      text-align: center;
+      font-size: 20px;
+    }
+  
+    .spot-btn-auditCom {
+      font-size: 16px;
+      padding: 14px 26px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .spot-audit-img {
+      width: 180px;
+    }
+  
+    .spot-con--2-div-contentt h3 {
+      font-size: 18px;
+          padding: 15px 0px 0px 0px;
+          text-align: center;
+      
+    }
+  
+    .spot-btn-auditCom {
+      padding: 12px 22px;
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .spot-ssec--2 {
+      padding: 20px 15px;
+    }
+  
+    .spot-audit-img {
+      width: 160px;
+    }
+  
+    .spot-con--2-div-contentt h3 {
+      font-size: 17px;
+          padding: 15px 0px 0px 0px;
+          text-align: center;
+ 
+      
+    }
+
+    .spot-con--2-div-contentt {
+      min-width: unset;
+    }
+  
+    .spot-btn-auditCom {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  

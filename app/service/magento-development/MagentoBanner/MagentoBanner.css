@@ -1,0 +1,153 @@
+.flex-new-banner-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.new-banner-btn {
+    padding: 12px 23.333px;
+    border-radius: 4.667px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0.327px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+}
+
+.colored {
+    background: #0c61ff;
+    border: 1px solid #0c61ff;
+}
+
+.colored:hover {
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+    background: white;
+}
+
+.transparent {
+    background-color: white;
+    color: #0c61ff ;
+    border: 1px solid #0c61ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transparent:hover {
+    background-color: #0c61ff;
+    color: white;
+    border: 1px solid #0c61ff;
+}
+
+.magento-banner-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    /* background: #e4ebf7; */
+    background: url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1745055628/Rectangle_57_egwoq8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.magento-banner-inner-container {
+    display: flex;
+    /* align-items: center; */
+    padding: 50px 60px 0px;
+    gap: 30px;
+}
+
+.magento-banner-left,
+.magento-banner-right {
+    flex: 1;
+}
+
+.magento-banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.magento-banner-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.08;
+}
+
+.magento-banner-para-cont {
+    margin-bottom: 2rem;
+    margin-top: 20px;
+}
+
+.magento-banner-para-cont > p {
+    font-size: 1.05rem;   
+    text-transform: none !important;
+    font-weight: 400;
+    margin: 15px 0px;
+    letter-spacing: normal !important;
+}
+
+/* .magento-banner-right > img {
+    width: 100%;
+} */
+
+.magento-banner-right > img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+@media (max-width:1200px){
+    .magento-banner-heading{
+        font-size: 2.2rem;
+    }
+    .magento-banner-right > img{
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:1024px) {
+    .magento-banner-inner-container {
+       flex-direction: column;
+       gap: 50px;
+    }
+    .magento-banner-right > img{
+        height: 300px;
+    }
+    .magento-banner-heading {
+        font-size: 2.3rem;
+        /* line-height: normal; */
+    }
+}
+
+@media screen and (max-width:768px) {
+    .magento-banner-inner-container {
+       padding: 40px 30px 0px;
+    }
+   
+    .magento-banner-right > img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .magento-banner-heading {
+        font-size: 2.3rem;
+        text-align:center;
+    }
+
+    .magento-banner-para-cont > p {
+        font-size: 1rem;   
+        text-align: center;
+    }
+
+    .flex-new-banner-btns {
+        justify-content: center;
+    }
+}

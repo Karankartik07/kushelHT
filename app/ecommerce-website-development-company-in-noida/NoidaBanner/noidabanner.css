@@ -1,0 +1,375 @@
+.noida-banner-section {
+    background: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1750757435/Greaternoidawestcommercialprojects_z4jcbi.png');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.noida-banner-overlay {
+    background: rgba(0, 0, 0, .7);
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.noida-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.noida-banner-heading {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: math-auto;
+
+}
+
+.noida-banner-heading .noida-banner-span {
+    color: #fff;
+    font-size: 45px !important;
+}
+
+.noida-banner-subtext {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 20px 0;
+    color: #ddd;
+}
+
+.noida-banner-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.noida-banner-btn-yellow,
+.noida-banner-btn-outline {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.noida-banner-btn-yellow {
+    background-color: #0c61ff;
+    color: #fff;
+    border: none;
+}
+
+.noida-banner-btn-yellow:hover {
+    background-color: #fff;
+    color: #0c61ff;
+}
+
+.noida-banner-btn-outline {
+    background-color: #fff;
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+}
+
+.noida-banner-btn-outline:hover {
+    background-color: #0c61ff;
+    color: #fff;
+    border-color: #0c61ff;
+}
+
+
+.noida-banner-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    padding: 0px 40px;
+    width: 100%;
+    gap: 40px;
+    text-align: left;
+}
+
+.noida-banner-left {
+    max-width: 785px;
+    padding: 55px 0px 0;
+}
+
+.noida-banner-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 24px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    color: #000;
+    text-align: left;
+}
+
+.mt-btn {
+    text-align: center;
+
+}
+
+.noida-banner-images {
+    display: flex;
+    justify-content: start;
+    padding: 40px 0px;
+    gap: 30px;
+}
+
+.noida-banner-images img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form-heading strong {
+
+    font-weight: 500;
+}
+
+.form-subheading {
+    color: #0051ff;
+    font-size: 14px;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+.form-input {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form-phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-country-code {
+    font-size: 14px;
+    white-space: nowrap;
+    width: 44px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.phone-input {
+    flex: 1;
+}
+
+.form-captcha {
+    font-size: 14px;
+    margin-bottom: 8px;
+    width: 51px;
+}
+
+.form-submit-btn {
+    background-color: #0051ff;
+    color: #fff;
+    padding: 14px;
+    width: 430px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #0051ff;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #ffffff;
+    color: #0051ff;
+    border: 1px solid #0051ff;
+}
+
+.form-terms {
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: center;
+    color: #555;
+}
+
+.form-terms a {
+    color: #0051ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .noida-banner-heading {
+        font-size: 48px;
+    }
+
+    .noida-banner-heading .noida-banner-span {
+        font-size: 48px !important;
+    }
+
+    .noida-banner-subtext {
+        font-size: 17px;
+        max-width: 90%;
+    }
+
+    .noida-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .noida-banner-section {
+        min-height: auto;
+    }
+
+    .noida-banner-content-wrapper {
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .noida-banner-form {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 40px;
+    }
+
+    .noida-banner-left {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .noida-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .noida-banner-section {
+        min-height: auto;
+    }
+
+    .noida-banner-heading {
+        font-size: 34px;
+    }
+
+    .noida-banner-heading .noida-banner-span {
+        font-size: 34px !important;
+    }
+
+    .noida-banner-subtext {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+
+    .noida-banner-buttons {
+        gap: 15px;
+    }
+
+    .noida-banner-btn-yellow,
+    .noida-banner-btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .noida-banner-clutch {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .noida-banner-content-wrapper {
+        padding: 0px 10px;
+    }
+
+    .noida-banner-left {
+        padding: 0;
+    }
+
+    .noida-banner-heading {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .noida-banner-heading .noida-banner-span {
+        font-size: 26px !important;
+    }
+
+    .noida-banner-subtext {
+        font-size: 15px;
+        text-align: left;
+        padding: 12px 0;
+        max-width: 100%;
+    }
+
+    .noida-banner-overlay {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .noida-banner-buttons {
+        gap: 12px;
+    }
+
+    .noida-banner-btn-yellow,
+    .noida-banner-btn-outline {
+        font-size: 15px;
+        padding: 10px 24px;
+        width: 100%;
+    }
+
+    .noida-banner-clutch {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .noida-banner-images {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-submit-btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .form-heading {
+        font-size: 18px;
+    }
+
+    .form-input {
+        font-size: 13px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .noida-banner-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,175 @@
+/* Main Section Padding */
+
+*{
+    font-family: 'Poppins',sans-serif;
+  }
+  .updatee-section {
+  padding: 50px 50px;
+  background: #ffffff;
+  }
+  .headless-intro{
+    max-width: 920px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .headless-intro h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin: auto;
+  }
+  .headless-intro p{
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    padding: 18px 0px 0px 0px;
+  }
+  .update-ul{
+    padding: 15px 0px 0px 0px;
+  }
+  .ulUpdate{
+    padding: 0;
+    line-height: 20px;
+    list-style-type: disc;
+  }
+  /* Container for all cards */
+  .update-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  }
+  
+  /* Single card layout */
+  .update-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 80px;
+  max-width: 1380px;
+  margin: auto;
+  /* background: #ffffff; */
+  padding: 10px 10px;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); */
+  transition: all 0.3s ease;
+  }
+  
+  /* Alternate layout (Image Left / Text Right) */
+  .update-section.reverse {
+  flex-direction: row-reverse;
+  }
+  
+  /* Text Section */
+  .update-text {
+  flex: 1;
+  max-width: 606px;
+  }
+  
+  .update-text h3 {
+  font-size: 36px;
+  font-weight: 550;
+  color: #111;
+  margin-bottom: 12px;
+  }
+  
+  .update-text p {
+  font-size: 17px;
+  padding: 20px 0px 0px 0px;
+  color: #111;
+  line-height: 1.6;
+  white-space: pre-line; /* to preserve new lines */
+  }
+  
+  /* Image Card */
+  .update-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.08);
+    max-width: 500px; /* increased from 400px */
+    width: 100%;      /* make sure it scales */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width:1024px){
+    .update-section, .update-section.reverse  {
+      flex-direction: column;
+  }
+ 
+}
+  @media (max-width: 768px) {
+  .update-section,
+  .update-section.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    padding: 15px 0px 10px 0px;
+  }
+  
+  .update-text,
+  .update-card {
+    max-width: 100%;
+  }
+  
+  .update-text h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .updatee-section{
+    padding: 30px 20px 30px 35px;
+  }
+  .headless-intro p{
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+  }
+  .update-text p {
+    font-size: 15px;
+  }
+  .update-container{
+    gap: 0;
+  }
+  }
+  @media (max-width:480px){
+    .updatee-section{
+      padding:50px;
+    }
+    .tayp{
+      padding: 40px 10px !important;
+    }
+  .headless-intro h3{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .update-text h3{
+    text-align: center !important;
+  }
+  .update-text p{
+    text-align: center !important;
+  }
+  .update-text h3{
+    text-align: center !important;
+  }
+  /* .headless-intro p{
+    font-size: 14px;
+  } */
+  }
+  @media(max-width:426px){
+    .headless-intro h3{
+      font-size: 22px;
+    }
+    .update-text h3{
+      text-align: center !important;
+    }
+    .update-text p{
+      text-align: center;
+    }
+  }

@@ -1,0 +1,380 @@
+.Mainphilosophy-section {
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://res.cloudinary.com/dal5dlztv/image/upload/v1748209977/t12_k6mcud.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.philosophy-section {
+  max-width: 1720px;
+  padding: 50px 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cardh3content {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.overlayWrap {
+
+  padding: 100px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+  gap: 2.4rem;
+}
+
+.text-contentSection {
+  flex: 1;
+}
+
+.text-contentSection h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.text-contentSection p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.highlightWapper {
+  color: #fff;
+  padding-top: 20px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.connect-btnB {
+  font-size: 18px;
+  background: white;
+  color: #0c61ff;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 4px 4px 0 #0c61ff;
+  cursor: pointer;
+}
+
+.connect-btnB:hover {
+  background-color: #0c61ff;
+  color: white;
+  box-shadow: none;
+}
+
+.sliderData {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardPhilo {
+  background: white;
+  color: black;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.5s ease-in-out;
+  width: max-content;
+
+}
+
+.card-wrapper-wrapper {
+  overflow: hidden;
+  width: 740px;
+  margin-top: 15px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+
+.cardPhilo p {
+  padding: 8px 0px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card-id {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.navigationWrapper {
+  display: flex;
+  gap: 10px;
+
+  width: 95%;
+  justify-content: flex-end;
+}
+
+.navigationWrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #0c61ff;
+  color: white;
+
+  border: 1px solid #0c61ff;
+}
+
+.navigationWrapper button:hover {
+  color: #0c61ff;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper-wrapper {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardPhilo {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width:1200px) {
+  .overlayWrap {
+    flex-direction: column;
+  }
+
+  .text-contentSection h1 {
+    text-align: center;
+  }
+
+  .highlightWapper {
+    text-align: center;
+  }
+
+  .ConnetDivBtn {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .overlayWrap {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .text-contentSection {
+    width: 100%;
+  }
+
+  .sliderData {
+    align-items: center;
+    width: 100%;
+  }
+
+  .card-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cardPhilo {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-wrapper-wrapper {
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .cardPhilo {
+    width: 100% !important;
+    max-height: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cardPhilo p {
+    width: 70%;
+  }
+
+  .text-contentSection h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .highlightWapper,
+  .ConnetDivBtn {
+    text-align: center;
+  }
+
+  .navigationWrapper {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-contentSection h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-contentSection p {
+    font-size: 1rem;
+  }
+
+  .connect-btnB {
+
+    padding: 12px;
+  }
+
+  .navigationWrapper {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .navigationWrapper button {
+    height: 45px;
+    width: 45px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardh3content {
+    width: 70%;
+  }
+
+  .card-wrapper-wrapper {
+    width: 100%;
+  }
+
+  .philosophy-section {
+    padding: 40px 0px;
+  }
+
+  .cardPhilo {
+    padding: 1.5rem;
+  }
+
+  .card-wrapper {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .text-contentSection h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .highlightWapper {
+    text-align: center;
+  }
+
+  .ConnetDivBtn {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card-wrapper-wrapper {
+    width: 100%;
+  }
+
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  .cardPhilo {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-contentSection h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-contentSection p {
+    font-size: 1rem;
+  }
+
+  .navigationWrapper {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .navigationWrapper button {
+    height: 45px;
+    width: 45px;
+    font-size: 1rem;
+  }
+
+  .cardPhilo p {
+    line-height: 25px;
+    width: 80%;
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width:450px) {
+  .cardPhilo {
+    min-height: 250px;
+  }
+
+  .text-contentSection h1 {
+    font-size: 24px;
+  }
+
+  .cardPhilo p {
+    width: 70%;
+  }
+}

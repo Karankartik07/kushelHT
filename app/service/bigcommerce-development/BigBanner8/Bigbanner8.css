@@ -1,0 +1,115 @@
+.mmcainBcoSe {
+    font-family: 'Arial', sans-serif;
+    max-width: 1720px;
+    margin: auto;
+    padding: 50px 50px;
+}
+
+.mainBcoSe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9%;
+
+}
+
+.containCom {
+    text-align: left;
+}
+
+.smallcomtext {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.bcomcImd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.logoImgcbom img {
+    height: auto;
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.descriptionCon3 {
+    padding-top: 15px;
+    width: 760px;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.descriptionCon3.visible {
+    color: gray;
+}
+
+.maSecImgaec img {
+    height: auto;
+    width: 500px;
+}
+@media (max-width:1200px){
+    .descriptionCon3 {
+width: 620px;
+    }
+}
+@media (max-width: 1024px) {
+    .mainBcoSe {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .descriptionCon3 {
+        width: 90%;
+        text-align: center;
+        margin:auto;
+    }
+    .maSecImgaec img {
+    height: 200;
+    width: 300px;
+}
+
+    .bcomcImd {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mmcainBcoSe {
+        padding:40px 30px;
+    }
+
+    .descriptionCon3 {
+        font-size: 16px;
+    }
+
+    .logoImgcbom img {
+        width: 150px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .smallcomtext {
+        font-size: 14px;
+    }
+
+    .descriptionCon3 {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .maSecImgaec img {
+        width: 200px;
+    }
+}

@@ -1,0 +1,84 @@
+.faqr-section {
+  max-width: 1720px;
+  margin: auto;
+  padding: 40px 60px;
+  background: #f5f5f5;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* 🔥 Masonry-like layout using CSS columns */
+.faq-columns {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.152);
+  padding: 35px;
+  column-width: 500px;
+  column-gap: 18px;
+}
+
+/* Each item is block inside columns */
+.faq-item {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  font-weight: bold;
+  height: 83px;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  font-size: 16px;
+  background-color: rgb(226, 241, 254);
+  border: none;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.519);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.faq-item.open .toggle-btn {
+  /* transform: rotate(45deg); */
+  background-color: #cce0ff;
+}
+
+/* Accordion content */
+.faq-answer {
+  max-height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  color: #444;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  padding: 0px 20px 40px 20px;
+  max-height: 400px;
+}
+@media screen  and (max-width:425px){
+    .faq-columns{
+        padding: 14px;
+    }
+}

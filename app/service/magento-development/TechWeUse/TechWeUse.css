@@ -1,0 +1,110 @@
+.tech-we-use-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 50px 50px;
+    background: #f8f8f8;
+    overflow: visible;
+    position: relative;
+}
+
+.tech-we-use-heading {
+    text-align: center;
+}
+
+.tech-we-use-para {
+    max-width: 900px;
+    text-align: center;
+    margin:10px auto;
+}
+
+.tech-we-use-slider-container {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.tech-we-use-slide-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 130px;  
+    width: 95% !important;
+}
+
+.tech-we-use-slide-item > h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.tech-we-use-slide-item > ul {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 15px 15px 0px;
+}
+
+.tech-we-use-slide-item > ul > li {
+    border: 1px solid black;
+    padding: 6px 10px 6px 17px;
+    border-radius: 8px;
+    font-size: 14px;
+    position: relative;
+    font-weight: 500;
+}
+.tech-we-use-slide-item > ul > li::before {
+    /* content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    background:black;
+    border-radius: 100%; */
+}
+
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.tech-we-use-slider-container .slick-prev,
+.tech-we-use-slider-container .slick-next {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tech-we-use-slider-container .slick-prev > svg,
+.tech-we-use-slider-container .slick-next > svg {
+    color: #000;
+}
+
+.tech-we-use-slider-container .slick-prev {
+    left: -20px;
+}
+
+.tech-we-use-slider-container .slick-next {
+    right: -6px;
+}
+
+@media screen and (max-width: 768px) {
+    .tech-we-use-outer-container {
+        padding: 40px 30px;
+    }
+
+    .tech-we-use-slider-container {
+        padding: 0px;
+    }
+}

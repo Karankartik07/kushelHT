@@ -1,0 +1,128 @@
+.dev-partner-section {
+  background-color: #f8f8ff;
+  color: black;
+  padding: 110px 50px;
+  max-width: 1720px;
+  margin: auto;
+}
+
+.devPartnerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.dev-partner-heading {
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.dev-partner-subtext {
+  font-size: 18px;
+  color: black;
+  max-width: 700px;
+}
+
+.dev-partner-button {
+  background-color: #0c61ff;
+  color: white;
+  padding: 15px 24px;
+  border: 1px solid #0c61ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dev-partner {
+  display: flex;
+}
+
+.dev-partner-button:hover {
+  border: 1px solid #0c61ff;
+  background-color: white;
+  color: #0c61ff;
+}
+
+/* Responsive Styling */
+@media(max-width:1024px) {
+
+  .dev-partner-heading {
+    line-height: 30px;
+  }
+
+  .dev-partner-section {
+    padding: 40px 30px;
+  }
+
+  .dev-partner-subtext {
+    padding-top: 10px;
+  }
+
+  .dev-partner-button {
+    width: 165px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev-partner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dev-partner-heading {
+    text-align: left !important;
+    font-size: 22px;
+  }
+
+  .dev-partner-subtext {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .dev-partner-button {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .devPartnerDiv {
+    flex-direction: column;
+  }
+
+  .dev-partner-section {
+    padding: 40px 20px;
+  }
+
+  .dev-partner-heading {
+    font-size: 20px;
+    text-align: center !important;
+  }
+
+  .dev-partner-heading {
+    line-height: 30px;
+    text-align: center !important;
+  }
+
+  .dev-partner-subtext {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .dev-partner-button {
+    margin-top: 10px;
+    width: 145px;
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}

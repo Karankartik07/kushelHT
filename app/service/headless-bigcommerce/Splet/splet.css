@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Wrapper */
+  .alokai-wrapper {
+    padding: 20px 40px;
+    background-color: #ffffff;
+  }
+  
+  /* Container */
+  .alokai-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Text Section */
+  .alokai-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .alokai-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111111;
+    line-height: 1.3;
+  }
+  
+  .alokai-subtext {
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #374151;
+    max-width: 600px;
+    /* margin-inline: auto; */
+  }
+  
+  /* Image Section */
+  .alokai-image {
+    flex: 1;
+    display: flex;
+    max-width: 450px;
+    justify-content: center;
+  }
+  
+  .alokai-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  /* --- Responsive Breakpoints --- */
+  
+  
+  @media (max-width: 480px) {
+    .alokai-heading {
+      font-size: 26px;
+    }
+  
+    .alokai-subtext {
+      font-size: 14px !important;
+    }
+  
+    .alokai-image img {
+      max-width: 200px !important;
+    }
+  }
+  @media (max-width: 375px) {
+    .alokai-heading {
+      font-size: 24px;
+    }
+  
+    .alokai-subtext {
+      font-size: 0.9rem;
+    }
+  
+    .alokai-image img {
+      max-width: 200px !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .alokai-heading {
+      font-size: 22px;
+      text-align: center;
+    }
+    .alokai-wrapper{
+        padding: 20px;
+    }
+  
+    .alokai-subtext {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .alokai-image img {
+      max-width: 240px !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .alokai-heading {
+      font-size: 38px;
+
+    }
+  
+    .alokai-subtext {
+      font-size: 1.05rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .alokai-container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+  
+    .alokai-text {
+      text-align: left;
+    }
+  
+   
+  
+    .alokai-subtext {
+      margin-inline: 0;
+      font-size: 18px;
+    }
+  
+    .alokai-image img {
+      max-width: 100%;
+      height: auto;
+      min-height: 450px;
+    }
+  }
+  

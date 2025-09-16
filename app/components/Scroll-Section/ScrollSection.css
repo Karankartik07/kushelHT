@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scroll-section-wrapper {
+    overflow-x: hidden;
+
+    padding-top: 60px;
+    background: linear-gradient(280deg, #ecf5fd, #f0f3fb 62.02%, #f9f9f4);
+
+    max-width: 1720px;
+    margin: auto;
+
+}
+
+
+.scrolled-section>svg {
+    width: 205vw !important;
+}
+
+.pin-spacer {
+    padding: 20px 60px !important;
+}
+
+.scroll-section-heading,
+.scroll-section-para {
+    text-align: center;
+}
+
+.scroll-section-heading {
+    font-size: 3.2rem;
+    font-weight: 600;
+  
+}
+
+.scroll-section-para {
+    font-size: 1.3rem;
+    margin: 20px 0px 0px;
+ 
+}
+
+
+
+@media screen and (max-width:600px) {
+   
+}
+
+.scroll-card-img {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.scroll-card-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+   
+}
+
+.scroll-card-para {
+    font-size: 1rem;
+    margin: 20px 0px 10px;
+   
+}
+
+.scroll-card-li-heading {
+    font-size: 1rem;
+    margin-bottom: 20px;
+   
+}
+
+.scroll-card-ul {
+    list-style: none;
+    margin: 0;
+}
+
+.scroll-card-ul>li {
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+
+ .scrolled-section{
+    min-height: 500px !important;
+ }
+ .scroll-cardds{
+    min-height: 300px !important;
+ }
+
+.scroll-card-li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scroll-card-li-icon {
+    font-size: 24px;
+}
+
+
+
+.mobile-scroll-section {
+    
+    padding: 25px 50px 50px;
+}
+
+.mobile-scroll-section  .slick-slide {
+    padding: 0 15px;
+}
+
+.mobile-scroll-section .slick-track {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .scroll-section-wrapper {
+        padding: 70px 15px 0px;
+    }
+
+    .scroll-container {
+        display: none;
+    }
+
+    .scroll-section-para {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .scroll-section-heading {
+        font-size: 2.4rem;
+    }
+
+    .mobile-scroll-section {
+       
+        padding: 25px 10px 35px;
+    }
+
+  
+
+    .scroll-card-para {
+        font-size: 1rem;
+    }
+
+    .scroll-card-ul>li {
+        font-size: 1rem;
+        margin: 5px 0px;
+    }
+
+}
+
+.counter {
+    display: block;
+    color: rgba(255, 255, 255, 0.05);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 4rem;
+    font-style: normal;
+    position:relative;
+    top: 10px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .scroll-section-wrapper {
+        padding: 70px 15px 0px;
+    }
+
+    .scroll-container {
+        display: none;
+    }
+
+    .scroll-section-para {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .scroll-section-heading {
+        font-size: 2.4rem;
+    }
+
+    .mobile-scroll-section {
+        display: block;
+        padding: 25px 10px 35px;
+    }
+
+    .scrolled-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .scroll-card-para {
+        font-size: 1rem;
+    }
+
+    .scroll-card-ul>li {
+        font-size: 1rem;
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mobile-scroll-section  .slick-slide {
+        padding: 0 0px 0px 10px;
+    }
+}

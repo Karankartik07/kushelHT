@@ -1,0 +1,17 @@
+#case2BlackRhino{
+    background-color: #F9F9F9;
+}
+#c3_BlackRhino_port p{
+    width: 70px;
+    height: 0px;
+    border: 2px solid #930708;
+}
+#black_port_circle{
+    background: #9C0000;
+}
+#case3_Black_PortCircle{
+    min-width: 130px;
+}
+#caBlack_PortCircle{
+    min-width: 130%;
+}

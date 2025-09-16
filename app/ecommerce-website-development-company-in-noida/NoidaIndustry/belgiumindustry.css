@@ -1,0 +1,148 @@
+.industry-section {
+  background: #fff7f6;
+  padding: 60px 60px;
+  text-align: center;
+  font-family: "sans-serif";
+   max-width: 1720px;
+  margin: 0 auto;
+}
+
+.industry-heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+
+.industry-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  /* border-bottom: 1px solid #e2e2e2; */
+  padding-bottom: 10px;
+}
+
+.industry-tab {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+}
+
+.industry-tab.active {
+  font-weight: 600;
+}
+
+.industry-tab.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #0b56e4;
+  bottom: 0;
+  left: 0;
+}
+
+.industry-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  background: #fff;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1720px;
+}
+
+.industry-image {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.industry-info {
+  flex: 1;
+  max-width: 750px;
+}
+
+.industry-info h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 16px !important;
+}
+
+.industry-info p {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.explore-btn {
+  background: #0b56e4;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background: #003ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .industry-content {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  /* .industry-info h3 {
+    text-align: center;
+  } */
+  .industry-info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .explore-btn {
+    margin: auto;
+  }
+  .industry-image {
+    width: 100%;
+    max-width: 360px;
+  }
+  /* .industry-info p {
+    text-align: center;
+  } */
+}
+@media (max-width: 430px) {
+  .industry-section {
+    padding: 10px;
+  }
+.industry-tabs {
+    overflow: auto;
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 20px;
+  }
+  .industry-tab {
+    min-width: 183px;
+    font-size: 17px;
+  }
+    .industry-heading {
+    padding: 0px 10px;
+    font-size: 28px;
+    text-align: left;
+  }
+}

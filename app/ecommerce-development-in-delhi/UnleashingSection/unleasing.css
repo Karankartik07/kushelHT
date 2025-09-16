@@ -1,0 +1,144 @@
+.unleashing1-wrapper {
+    padding: 60px 20px;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .unleashing1-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* ✅ This line centers horizontally */
+    gap: 40px;
+    text-align: center; /* Optional: center-align text for a more balanced layout */
+  }
+  
+  
+  .unleashing1-left {
+    flex: 0.8;
+    min-width: 240px;
+    max-width: 360px;
+  }
+  
+  .unleashing1-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .unleashing1-right {
+    /* flex: 1.2;
+    min-width: 300px; */
+    max-width: 700px;
+  }
+  
+  .unleashing1-right h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 20px !important;
+  }
+  
+  .unleashing1-right h2 span {
+    font-weight: 700;
+  }
+  
+  .unleashing1-right p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+  
+  .unleashing1-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-blue {
+    background-color: #0050e0;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 15px;
+    border: none;
+    border-radius: 39px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-blue:hover {
+    background-color: #003bb3;
+  }
+  
+  .btn-outline {
+    border: 2px solid #0050e0;
+    color: #0050e0;
+    background: transparent;
+    padding: 14px 24px;
+    font-size: 15px;
+    border-radius: 39px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background-color: #0050e0;
+    color: #fff;
+  }
+  
+  /* RESPONSIVE STYLING */
+  @media (max-width: 768px) {
+    .unleashing1-container {
+      flex-direction: column;
+    }
+  
+    .unleashing1-right h2 {
+      font-size: 22px;
+    }
+  
+    .unleashing1-right p {
+      font-size: 14px;
+    }
+  
+    .btn-blue,
+    .btn-outline {
+      padding: 10px 20px;
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .unleashing1-wrapper {
+      padding: 40px 15px;
+    }
+  
+    .unleashing1-right h2 {
+      font-size: 20px;
+      line-height: 1.3;
+      padding: 0px 10px;
+      /* text-align: center; */
+    }
+  .unleashing1-right p{
+    padding: 0px 10px;
+    /* text-align: center; */
+  }
+    .unleashing1-buttons {
+      flex-direction: column;
+      gap: 14px;
+    }
+  
+    .btn-blue,
+    .btn-outline {
+      width: 100%;
+    }
+  }
+  

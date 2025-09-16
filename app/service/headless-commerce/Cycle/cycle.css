@@ -1,0 +1,249 @@
+.full-cycle-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 50px 50px; 
+  }
+  
+  .header-with-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+
+  .full-cycle-heading {
+    font-size: 39px;
+    font-weight: 600;
+    text-align: center;
+    color: #212121;
+    flex: 1;
+  
+  }
+  .swiper{
+    padding: 15px !important;
+  }
+  .highlight {
+    color: #0c61ff; 
+  }
+  
+  .full-cycle-subtext {
+    font-size: 1.1rem;
+    padding: 5px 0px 0px 0px;
+    color: #111;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+  }
+  
+  /* Swiper buttons */
+  .arrow-controls {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .arrow-controls-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 12px;
+  }
+  
+  .arrow-btn {
+    width: 48px;
+    height: 48px;
+    left: 647px;
+    position: relative;
+    right: auto;
+    /* margin: auto; */
+    top: 24px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #fff;
+    color: #0c61ff;
+    transition: background 0.2s ease;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow-btn:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Hide default Swiper buttons */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  
+  .service-slider {
+    padding-bottom: 30px;
+  }
+  
+  /* Card styles */
+  .service-card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+    min-height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #0c61ff;
+    background: #f8f9fa;
+  }
+  
+  .service-icon {
+    font-size: 1.1rem !important;
+    height: 50px;
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(98%) saturate(1797%) hue-rotate(215deg) brightness(101%) contrast(103%);
+    color: #0c61ff;
+    margin-bottom: 12px;
+  }
+  
+  .service-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  .swiper-slide {
+    padding: 20px 0px 0px 0px;
+  }
+  
+  .service-description {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* ========== RESPONSIVE STYLES ========== */
+  
+  /* Tablets (768px and below) */
+  /* Responsive Swiper Updates Only - Add/Replace This in Your CSS */
+  
+  /* Tablets (768px and below) */
+  @media(max-width:1270px){
+   
+      #headless-phase1Name{
+        left: 1px !important;
+       }
+    
+  }
+  @media screen and (max-width: 768px) {
+  .header-with-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .full-cycle-container{
+    padding: 0px 20px 0px 20px;
+  }
+  
+  .arrow-controls-bottom {
+    margin-top: 20px;
+  }
+  
+  .arrow-controls {
+    margin-top: 10px;
+        align-self: center;
+        position: relative;
+        top: -96px;
+  }
+  
+  .full-cycle-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .full-cycle-subtext {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .swiper-wrapper {
+    flex-direction: row !important;
+  }
+  
+  .swiper-slide {
+    width: calc(50% - 10px) !important;
+    margin-right: 10px;
+  }
+  
+  .service-card {
+    padding: 20px;
+    min-height: 150px !important;
+  }
+  
+  .arrow-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+  }
+  
+  /* Phones (480px and below) */
+  @media screen and (max-width: 480px) {
+  .full-cycle-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+ #headless-phase1Name{
+  left: 1px !important;
+ }
+  
+  .full-cycle-subtext {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  #headless-phase1:before{
+    left: 1px;
+  }
+  
+  .swiper-slide {
+    width: 100% !important;
+    margin-right: 0;
+  }
+  
+  .arrow-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+  
+  .service-card {
+    padding: 16px;
+    min-height: auto;
+  }
+  
+  .service-title {
+    font-size: 1rem;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+  }
+  }
+  
+  @media (max-width: 400px) {
+  .ben-icons {
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+  }

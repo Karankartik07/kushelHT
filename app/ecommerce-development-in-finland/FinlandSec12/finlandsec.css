@@ -1,0 +1,269 @@
+.sec---abc {
+  margin: auto;
+  max-width: 1720px;
+  padding: 20px 40px; 
+  background-color: #f8f8f8;
+}
+
+.heaaader-content {
+  text-align: center;
+  font-size: 30px; 
+}
+
+.heaaader-content h3 {
+  margin: 15px 0px 0px 0px;
+  text-align: center;
+  padding: 35px 25px 12px 25px; 
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.hrEcommm {
+  margin-top: -20px;
+}
+
+.heaaader-content h5 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 20px 0px 0px 0px; 
+}
+
+.heaaader-content h6 {
+  text-align: center;
+  font-size: 18px; 
+  font-weight: 400;
+  max-width: 900px;
+  margin: auto;
+}
+
+.linkss ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px 0px 0px;
+}
+
+.linkss ul li {
+  list-style: none;
+  cursor: pointer !important;
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.linkss ul li:hover {
+  color: rgb(18, 88, 241);
+}
+
+.contttent-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  scroll-margin-top: 260px;
+  align-items: center;
+  margin: 25px;
+}
+
+.ecom-content {
+  padding: 30px;
+  margin: 40px;
+  width: 70%;
+  gap: 12px;
+}
+
+.ecom-content h3 {
+  text-decoration: none;
+  margin-bottom: 28px;
+  font-size: 38px; 
+  font-weight: 500;
+
+}
+
+.ecom-content p {
+  line-height: 30px;
+  font-size: 18px; 
+}
+
+.button-b2 {
+  padding: 18px 35px;
+  margin-top: 40px;
+  color: white;
+  background-color: rgb(40, 105, 244);
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+.button-b2:hover {
+  color: rgb(40, 105, 244);
+  background-color: white;
+  border: 1px solid rgb(40, 105, 244);
+}
+
+.imgg-2nd {
+  margin-left: 70px;
+}
+
+@media(max-width:1150px) {
+  .contttent-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imgg-2nd {
+    margin-left: 0;
+  }
+
+  #b2b {
+    flex-direction: column-reverse !important;
+  }
+
+  #d2c {
+    flex-direction: column-reverse !important;
+    align-items: center;
+  }
+}
+
+@media(max-width:645px) {
+  .img img {
+    width: 100%;
+  }
+
+  .imgg-2nd img {
+    width: 100%;
+  }
+
+  .img-3rd img {
+    width: 100%;
+  }
+}
+
+@media(max-width:505px) {
+  .ecom-content {
+     padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  /* align-items: center; */
+  }
+
+  .heaaader-content h5 {
+    font-size: 20px;
+      text-align: left;
+  }
+
+  .linkss ul {
+    flex-direction: row;
+    padding: 18px 0;
+    align-items: center;
+
+  }
+
+  .linkss ul li {
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  .contttent-wrapper {
+    margin: 0;
+  }
+
+  .projectsHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text h2 {
+    font-size: 20px !important;
+    text-align: center;
+  }
+
+  .text p {
+    text-align: center;
+  }
+
+  .ecom-content p {
+    /* text-align: center; */
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .ecom-content h3 {
+    line-height: 35px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .heaaader-content h6 {
+    font-size: 15px !important;
+    padding: 20px 0px 0px 0px;
+    text-align: left !important;
+
+  }
+
+  .heaaader-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px;
+    text-align: left !important;
+  }
+
+  .button-b2 {
+    font-size: 11px;
+    padding: 20px 15px;
+  }
+
+  .sec---abc {
+    padding: 40px 30px;
+  }
+}
+
+/*   */
+
+@media (max-width: 768px) {
+  .headdd-div {
+    position: static !important; 
+  }
+
+  .contttent-wrapper {
+    margin: 0;
+  }
+}
+
+.headdd-div {
+  position: sticky;
+  top: -98px;
+  z-index: 99 !important;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.linkss ul li.active {
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  text-underline-offset: 17px;
+  color: rgb(18, 88, 241);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+ 
+@media(max-width:520px) {
+  .heaaader-content h6 {
+    width: 100% !important;
+
+  }
+}
+
+@media(max-width:720px) {
+  .heaaader-content h6 {
+    width: 100% !important;
+  }
+}
+
+@media(max-width:550px) {
+  .button-b2 {
+    margin: 0px !important;
+  }
+}

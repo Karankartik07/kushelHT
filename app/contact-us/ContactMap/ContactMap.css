@@ -1,0 +1,152 @@
+.globalMainContact{
+    max-width: 1720px;
+    padding: 50px 50px;
+    margin: auto;
+}
+.mainGlobalcontactMap{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+
+}
+.globalmaincontent p{
+    font-size: 40px;
+    font-weight: 400;
+}
+.globalmaincontent span{
+color: #0c61ff;
+}
+.globalparaMap{
+  padding-top: 60px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.globalstartMap{
+  margin-top: 13px;
+    padding: 25px 30px;
+ border-radius: 10px;
+    border: 1px solid #0c61ff;
+}
+.globalMapContry{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 38px;
+  
+}
+.globalLocation{
+   width: 260px;
+   font-size: 16px;
+   font-weight: 500;
+   gap: 5px;
+   color: #333333;
+   display: flex;
+}
+.globalLocation span{
+    color:#0c61ff ;
+    font-size: 25px;
+
+ 
+}
+.globalContryMail{
+padding-top: 5px;
+    color: #333333;
+    font-size: 16px;
+    gap: 5px;
+    display: flex;
+  margin: 6px 0;
+    font-weight: 500;
+}
+.globalContryMail span{
+    color:#0c61ff ;
+    font-size: 25px;
+}
+.iframeMapContact{
+padding-top: 50px;
+    width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .mainGlobalcontactMap {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .globalmaincontent p {
+      font-size: 34px;
+    }
+  
+    .globalLocation,
+    .globalContryMail {
+      width: 100%;
+    }
+  
+    .iframeMapContact {
+      height: 400px;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+  .globalparaMap{
+    padding-top: 20px;
+   
+  }
+    .mainGlobalcontactMap {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .globalmaincontent p {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .globalstartMap {
+      padding: 20px;
+    }
+  
+    .globalMapContry,
+    .globalLocation,
+    .globalContryMail {
+      font-size: 15px;
+    }
+  
+    .globalLocation,
+    .globalContryMail {
+      width: 100%;
+      /* flex-wrap: wrap; */
+    }
+  
+    .iframeMapContact {
+      padding-top: 20px;
+      height: 300px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .globalMainContact {
+      padding: 30px 20px;
+    }
+  
+    .globalmaincontent p {
+      font-size: 24px;
+    }
+  
+    .globalstartMap {
+      padding: 15px;
+    }
+  
+    .globalMapContry {
+      font-size: 16px;
+    }
+  
+    .globalLocation span,
+    .globalContryMail span {
+      font-size: 20px;
+    }
+  
+    .iframeMapContact {
+      height: 250px;
+    }
+  }
+  
+  

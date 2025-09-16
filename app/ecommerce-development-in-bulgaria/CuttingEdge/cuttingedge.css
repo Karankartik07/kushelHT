@@ -1,0 +1,261 @@
+.cutting1-section {
+  padding: 60px 20px;
+  background-color: #f9fbfe;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.cutting1-container {
+padding: 0px 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.cutting1-left {
+  /* flex: 1; */
+  /* min-width: 320px; */
+  padding: 20px;
+}
+
+.cutting1-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.cutting1-left p {
+  font-size: 16px;
+  padding: 10px 0px;
+  color: #333;
+  max-width: 810px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.cutting1-btn {
+  background-color: #1665f6;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cutting1-btn:hover {
+  background-color: #0f4ec4;
+}
+
+.cutting1-right {
+  /* min-width: 320px; */
+  width: 440px;
+  padding: 20px;
+  position: relative;
+}
+
+.cutting1-image-wrapper {
+  position: relative;
+  max-width: 100%;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+
+.cutting1-image {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  height: auto;
+}
+
+.cutting1-stats {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  background-color: #1665f6;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 140px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cutting1-stats strong {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cutting1-stats p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* =========================
+     ✅ Responsive for < 768px 
+     ========================= */
+@media (max-width: 768px) {
+  .cutting1-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .cutting1-left {
+    padding: 0 10px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cutting1-left h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .cutting1-left p {
+    font-size: 15px;
+    line-height: 1.7; 
+  }
+
+  .cutting1-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .cutting1-right {
+    padding: 0;
+    margin: auto;
+    width: auto;
+  }
+
+  .cutting1-image-wrapper {
+    border-radius: 20px;
+  }
+
+  .cutting1-image {
+    border-radius: 20px;
+  }
+
+  .cutting1-stats {
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .cutting1-stats strong {
+    font-size: 18px;
+  }
+
+  .cutting1-stats p {
+    font-size: 13px;
+  }
+}
+
+/* ✅ Mobile Screens: ≤500px */
+@media (max-width: 500px) {
+  .cutting1-container {
+    flex-direction: column;
+    padding: 0 12px;
+    gap: 30px;
+  }
+
+  .cutting1-left {
+    padding: 0;
+    text-align: left;
+  }
+
+  .cutting1-left h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .cutting1-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .cutting1-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cutting1-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .cutting1-image-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .cutting1-image {
+    border-radius: 12px;
+    width: 73%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .cutting1-stats {
+    width: 100px;
+    font-size: 12px;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .cutting1-stats strong {
+    font-size: 16px;
+  }
+
+  .cutting1-stats p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cutting1-container {
+    /* width: 250px; */
+    display: flex;
+    flex-direction: column;
+  }
+  .cutting1-left h2 {
+    width: 250px;
+  }
+  .cutting1-left,
+  .cutting1-right {
+    width: 100%;
+    padding: 0px 20px 0px 0px;
+  }
+  .cutting1-left p {
+    width: 250px;
+  }
+  .cutting1-btn {
+    width: 220px;
+  }
+  .cutting1-image-wrapper {
+    width: 90%;
+  }
+  .cutting1-image-wrapper Image {
+    width: 60%;
+  }
+}

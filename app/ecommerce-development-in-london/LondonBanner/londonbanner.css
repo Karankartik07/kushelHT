@@ -1,0 +1,388 @@
+.london-banner-section {
+    background: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1750054035/5e27c046b41701e73a605bbd36da9708d278712b_ivakpj.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.london-banner-overlay {
+    background: rgba(0, 0, 0, .7);
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.london-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.london-banner-heading {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: math-auto;
+
+}
+
+.london-banner-heading .london-banner-span {
+    color: #fff;
+    font-size: 45px !important;
+}
+
+.london-banner-subtext {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 20px 0;
+    color: #ddd;
+}
+
+.london-banner-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.london-banner-btn-yellow,
+.london-banner-btn-outline {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.london-banner-btn-yellow {
+    background-color: #0c61ff;
+    color: #fff;
+    border: none;
+}
+
+.london-banner-btn-yellow:hover {
+    background-color: #fff;
+    color: #0c61ff;
+}
+
+.london-banner-btn-outline {
+    background-color: #fff;
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+}
+
+.london-banner-btn-outline:hover {
+    background-color: #0c61ff;
+    color: #fff;
+    border-color: #0c61ff;
+}
+
+
+.london-banner-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    padding: 0px 40px;
+    width: 100%;
+    gap: 40px;
+    text-align: left;
+}
+
+.london-banner-left {
+    max-width: 785px;
+    padding: 55px 0px 0;
+}
+
+.london-banner-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 24px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    color: #000;
+    text-align: left;
+}
+
+.mt-btn {
+    text-align: center;
+
+}
+
+.london-banner-images {
+    display: flex;
+    justify-content: start;
+    padding: 40px 0px;
+    gap: 30px;
+}
+
+.london-banner-images img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form-heading strong {
+
+    font-weight: 500;
+}
+
+.form-subheading {
+    color: #0051ff;
+    font-size: 14px;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+.form-input {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form-phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-country-code {
+    font-size: 14px;
+    white-space: nowrap;
+    width: 44px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.phone-input {
+    flex: 1;
+}
+
+.form-captcha {
+    font-size: 14px;
+    margin-bottom: 8px;
+    width: 51px;
+}
+
+.form-submit-btn {
+    background-color: #0051ff;
+    color: #fff;
+    padding: 14px;
+    width: 430px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #0051ff;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #ffffff;
+    color: #0051ff;
+    border: 1px solid #0051ff;
+}
+
+.form-terms {
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: center;
+    color: #555;
+}
+
+.form-terms a {
+    color: #0051ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .london-banner-heading {
+        font-size: 48px;
+        text-align: center;
+
+    }
+
+    .london-banner-heading .london-banner-span {
+        font-size: 48px !important;
+        text-align: center;
+
+    }
+
+    .london-banner-subtext {
+        font-size: 17px;
+        /* max-width: 90%; */
+        text-align: center;
+
+    }
+
+    .london-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+        text-align: center;
+
+    }
+
+    .london-banner-section {
+        min-height: auto;
+    }
+
+    .london-banner-buttons , .london-banner-images {
+        justify-content: center;
+    }
+
+    .london-banner-content-wrapper {
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .london-banner-form {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 40px;
+    }
+
+    .london-banner-left {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .london-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .london-banner-section {
+        min-height: auto;
+    }
+
+    .london-banner-heading {
+        font-size: 34px;
+    }
+
+    .london-banner-heading .london-banner-span {
+        font-size: 34px !important;
+    }
+
+    .london-banner-subtext {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+
+    .london-banner-buttons {
+        gap: 15px;
+    }
+
+    .london-banner-btn-yellow,
+    .london-banner-btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .london-banner-clutch {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .london-banner-content-wrapper {
+        padding: 0px 0px;
+    }
+
+    .london-banner-left {
+        padding: 0;
+    }
+
+    .london-banner-heading {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .london-banner-heading .london-banner-span {
+        font-size: 26px !important;
+    }
+
+    .london-banner-subtext {
+        font-size: 15px;
+        text-align: left;
+        padding: 12px 0;
+        max-width: 100%;
+    }
+
+    .london-banner-overlay {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .london-banner-buttons {
+        gap: 12px;
+    }
+
+    .london-banner-btn-yellow,
+    .london-banner-btn-outline {
+        font-size: 15px;
+        padding: 10px 24px;
+        width: 81%;
+    }
+
+    .london-banner-clutch {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .london-banner-images {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-submit-btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .form-heading {
+        font-size: 18px;
+    }
+
+    .form-input {
+        font-size: 13px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .london-banner-buttons {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}

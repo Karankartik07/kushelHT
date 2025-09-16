@@ -1,0 +1,353 @@
+.getquote-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+  /* background: #f9f9f9; */
+  max-height: 740px;
+  position: sticky;
+  top: 55px;
+}
+
+.getquote-form {
+  width: 390px;
+  background: #fff;
+  padding: 30px 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.getquote-header {
+  height: 140px;
+  background: #0646e0;
+  clip-path: polygon(
+    0% -1%,
+    0% 49%,
+    12% 11%,
+    581% 17%,
+    -20% -266%,
+    378% 767%,
+    353% -147%
+  );
+  position: absolute;
+  top: 50;
+  left: 0;
+  right: 0;
+}
+
+/* polygon((0% -1%, 0% 91%,13% 13%, 528% 34%,-56% -290%, 378% 767%,353% -147%) */
+
+.getquote-form h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.getquote-form .getquote-form-label {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 5px 0 5px;
+  color: #222;
+}
+
+.getquote-form input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
+  width: 350px !important;
+}
+
+.getquote-form input[name="name2"],
+.getquote-form input[name="email2"],
+.getquote-form input[name="message"],
+.getquote-form .form-phone-wrapper input[name="phone2"] {
+  width: 100%;
+  min-width: 350px;
+  padding: 14px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 0;
+}
+.textFormArea {
+  width: 100%;
+  min-width: 350px;
+  padding: 14px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 0;
+}
+.getquote-form .form-phone-wrapper {
+  width: 100%;
+}
+
+.getquote-form .form-submit-btn {
+  width: 100%;
+  margin-top: 5px;
+  background: #0646e0;
+  color: #fff;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid #0b56e4;
+}
+
+.getquote-form .form-submit-btn:hover {
+  background-color: white;
+  color: #0b56e4;
+  border: 2px solid #0b56e4;
+  transition: all 0.5s;
+}
+
+.getquote-terms {
+  font-size: 13px;
+  margin-top: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.getquote-terms a {
+  color: #0646e0;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.details-sec {
+  display: flex;
+  padding: 30px 60px;
+  gap: 20px;
+  max-width: 1720px;
+  margin: auto;
+}
+
+.details-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-desc h4 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.details-desc p {
+  font-size: 17px;
+  margin: 10px 0px;
+}
+
+.details-desc h5 {
+  line-height: 34px;
+  font-size: 30px;
+  font-weight: 600;
+  /* text-align: center; */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.details-desc h6 {
+  font-size: 28px;
+  font-weight: 600;
+  /* text-align: center; */
+  /* color: #0b56e4; */
+}
+
+.phone-input {
+  flex: 1;
+}
+
+.captcha-box {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+#captchaQuestion {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#captchaAnswer {
+  border: none;
+  border-bottom: 2px solid #000;
+  text-align: center;
+  width: 40px;
+  margin-left: 6px;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#captchaAnswer:focus {
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+#phone {
+  padding-left: 50px !important;
+}
+
+.inputcapt {
+  font-size: 20px;
+  width: 35%;
+}
+
+.captcha-btn {
+  background: #087108 !important;
+  border: 1px solid #087108;
+  font-size: 15px !important;
+  color: #ffffff !important;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.captcha-btn:hover {
+  background: #065a06;
+}
+
+#ans-captch {
+  border-bottom: 2px solid black;
+  font-size: 1.2rem;
+  width: 35%;
+  text-align: center;
+}
+
+#ans-captch:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.container {
+  min-width: 1400px !important;
+}
+
+.iti__country-list {
+  width: 350px !important;
+}
+
+.iti__country {
+  font-size: 13px !important;
+  padding: 6px 10px 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .details-sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .getquote-wrapper {
+    padding: 0px;
+  }
+
+  .getquote-form {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .details-sec {
+    padding: 20px 50px;
+  }
+  /* 
+  .details-desc p {
+    text-align: center;
+  } */
+
+  /* .details-desc h4,
+  h5,
+  h6 {
+    text-align: center;
+  } */
+  /* 
+  .detail-foot {
+    margin: auto;
+  } */
+
+  .getquote-form input[name="name"],
+  .getquote-form input[name="email"],
+  .getquote-form .form-phone-wrapper input[name="phone"] {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details-sec {
+    padding: 20px 20px;
+  }
+
+  .details-desc p {
+    font-size: 16px;
+  }
+
+  .details-desc h4 {
+    font-size: 23px;
+  }
+
+  .details-desc h5 {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+
+  .details-desc h6 {
+    font-size: 18px;
+  }
+
+  .getquote-wrapper {
+    padding: 28px 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .inputcapt {
+    width: 45%;
+  }
+  .details-desc p {
+    font-size: 15px;
+  }
+  .getquote-form input[name="name2"],
+  .getquote-form input[name="email2"],
+  .getquote-form .form-phone-wrapper input[name="phone2"] {
+    min-width: auto;
+  }
+  .textFormArea {
+    min-width: auto;
+  }
+}
+
+.detail-foot {
+  max-width: 400px;
+}
+
+.detail-foot-p {
+  font-weight: 600;
+}
+
+.detail-foot span {
+  font-weight: 600;
+}

@@ -1,0 +1,144 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .softyy {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .softyy1 {
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .softyy-header h2 {
+    font-size: 2.5rem;
+    color: #111;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .softyy-header p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: #111;
+  }
+  
+  .softyy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 40px;
+  }
+  .softyy-box-content span{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .softyy-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .softyy-box:hover {
+    transform: translateY(-5px);
+    background-color: rgba(237, 237, 237, 0.514);
+  }
+  
+  .softyy-icon {
+    font-size: 2rem;
+    height: 45px;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(98%) saturate(1797%) hue-rotate(215deg) brightness(101%) contrast(103%);
+    color: #007BFF;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  
+  .softyy-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px 0px 0px 0px;
+    color: #111;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .softyy-header h2 {
+      font-size: 2rem;
+    }
+  
+    .softyy-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .softyy-box {
+      flex-direction: row;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .softyy {
+      padding: 3rem 1.5rem;
+    }
+  
+    .softyy-header p {
+      font-size: 1rem;
+    }
+  
+    .softyy-box {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    /* .softyy-icon {
+      margin-bottom: 0.5rem;
+    } */
+  }
+  
+  @media (max-width: 480px) {
+    .softyy {
+      padding: 2rem 22px;
+    }
+  
+    .softyy-header h2 {
+      font-size: 1.3rem;
+    }
+    /* .softyy-box-content{
+      text-align: center;
+    } */
+  
+    .softyy-header p {
+      font-size: 0.95rem;
+    }
+  
+    .softyy-box {
+      padding: 1rem;
+    }
+  
+    /* .softyy-icon {
+      font-size: 1.8rem;
+      margin: auto;
+    } */
+  
+    .softyy-box p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,380 @@
+.denmark-banner-section {
+    background: url('https://res.cloudinary.com/dxlykgx6w/image/upload/v1757152046/6ce5e8fb264dd9cec35d5bcee90512bd7b1b7b6f_v9mzat.jpg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.denmark-banner-overlay {
+    background: rgba(0, 0, 0, .7);
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.denmark-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.denmark-banner-heading {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: math-auto;
+
+}
+
+.denmark-banner-heading .denmark-banner-span {
+    color: #fff;
+    font-size: 45px !important;
+}
+
+.denmark-banner-subtext {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 20px 0;
+    color: #ddd;
+}
+
+.denmark-banner-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.denmark-banner-btn-yellow,
+.denmark-banner-btn-outline {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.denmark-banner-btn-yellow {
+    background-color: #0c61ff;
+    color: #fff;
+    border: none;
+}
+
+.denmark-banner-btn-yellow:hover {
+    background-color: #fff;
+    color: #0c61ff;
+}
+
+.denmark-banner-btn-outline {
+    background-color: #fff;
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+}
+
+.denmark-banner-btn-outline:hover {
+    background-color: #0c61ff;
+    color: #fff;
+    border-color: #0c61ff;
+}
+
+
+.denmark-banner-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    padding: 0px 40px;
+    width: 100%;
+    gap: 40px;
+    text-align: left;
+}
+
+.denmark-banner-left {
+    max-width: 785px;
+    padding: 55px 0px 0;
+}
+
+.denmark-banner-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 24px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    color: #000;
+    text-align: left;
+}
+
+.mt-btn {
+    text-align: center;
+
+}
+
+.denmark-banner-images {
+    display: flex;
+    justify-content: start;
+    padding: 40px 0px;
+    gap: 30px;
+}
+
+.denmark-banner-images img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form-heading strong {
+
+    font-weight: 500;
+}
+
+.form-subheading {
+    color: #0051ff;
+    font-size: 14px;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+.form-input {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form-phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-country-code {
+    font-size: 14px;
+    white-space: nowrap;
+    width: 44px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.phone-input {
+    flex: 1;
+}
+
+.form-captcha {
+    font-size: 14px;
+    margin-bottom: 8px;
+    width: 51px;
+}
+
+.form-submit-btn {
+    background-color: #0051ff;
+    color: #fff;
+    padding: 14px;
+    width: 430px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #0051ff;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #ffffff;
+    color: #0051ff;
+    border: 1px solid #0051ff;
+}
+
+.form-terms {
+    font-size: 15px;
+    margin-top: 14px;
+    text-align: center;
+    color: #555;
+}
+
+.form-terms a {
+    color: #0051ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .denmark-banner-heading {
+        font-size: 48px;
+    }
+
+    .denmark-banner-heading .denmark-banner-span {
+        font-size: 48px !important;
+    }
+
+    .denmark-banner-subtext {
+        font-size: 17px;
+        max-width: 90%;
+    }
+
+    .denmark-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .denmark-banner-section {
+        min-height: auto;
+    }
+
+    .denmark-banner-content-wrapper {
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .denmark-banner-form {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 40px;
+    }
+
+    .denmark-banner-left {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .denmark-banner-overlay {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .denmark-banner-section {
+        min-height: auto;
+    }
+
+    .denmark-banner-heading {
+        font-size: 34px;
+    }
+
+    .denmark-banner-heading .denmark-banner-span {
+        font-size: 34px !important;
+    }
+
+    .denmark-banner-subtext {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+
+    .denmark-banner-buttons {
+        gap: 15px;
+    }
+
+    .denmark-banner-btn-yellow,
+    .denmark-banner-btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .denmark-banner-clutch {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .denmark-banner-content-wrapper {
+        padding: 0px 10px;
+    }
+
+    .denmark-banner-left {
+        padding: 0;
+    }
+
+    .denmark-banner-heading {
+        font-size: 26px;
+    }
+
+    .denmark-banner-heading .denmark-banner-span {
+        font-size: 26px !important;
+    }
+
+    .denmark-banner-subtext {
+        font-size: 15px;
+        padding: 12px 0;
+        max-width: 100%;
+    }
+
+    .denmark-banner-overlay {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .denmark-banner-buttons {
+        gap: 12px;
+    }
+
+    .denmark-banner-btn-yellow,
+    .denmark-banner-btn-outline {
+        font-size: 15px;
+        padding: 10px 24px;
+        width: 81%;
+    }
+
+    .denmark-banner-clutch {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .denmark-banner-images {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-submit-btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .form-heading {
+        font-size: 18px;
+    }
+
+    .form-input {
+        font-size: 13px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .denmark-banner-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 350px) {
+    .denmark-banner-content-wrapper {
+      padding: 0;
+    }
+}

@@ -1,0 +1,107 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+/* ========== Basic Section Styles ========== */
+.storefront-section {
+    padding: 50px 50px;
+    background-color: #fff;
+  }
+  
+  .storefront-container {
+    display: flex;
+    /* flex-wrap: wrap;  */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  /* ========== Left Column with Single Image ========== */
+  .storefront-left {
+    flex: 1 1 450px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .storefront-image {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    display: block;
+    object-fit: contain;
+  }
+  
+  /* ========== Right Column: Text ========== */
+  .storefront-right {
+    /* flex: 1 1 500px; */
+    max-width: 600px;
+    margin-left: 40px; 
+  }
+  
+  .storefront-right h3 {
+    font-size: 29px;
+    font-weight: 550;
+    margin-bottom: 16px;
+    color: #1a1a1a;
+  }
+  
+  .storefront-right p {
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 10px 0px 0px 0px;
+    color: #111;
+    margin: 0;
+  }
+  
+  /* ========== Responsive Media Queries ========== */
+
+  @media (max-width: 1024px) {
+    .storefront-container {
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .storefront-right {
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .storefront-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .storefront-right {
+      margin: 0;
+  
+    }
+    
+    .storefront-left, 
+    .storefront-right {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .storefront-section {
+      padding: 1px 22px 40px 22px;
+    }
+    
+    .storefront-right h3 {
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    .storefront-right p {
+      font-size: 14px;
+      text-align: center;
+
+    }
+  }
+  
+  

@@ -1,0 +1,131 @@
+.choose-magento-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.choose-magneto-span {
+    color: #1549f3;
+    border: 1px solid #1549f3;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: table;
+    margin: 0px auto 25px;
+    transition: all 500ms ease;
+}
+
+.choose-magneto-span:hover {
+    background: #1549f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.choose-magento-heading {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.choose-magento-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.choose-magento-grid-item {
+    box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+    padding:40px 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    background: #fff;
+}
+
+.choose-magento-grid-item:before {
+    background: -webkit-linear-gradient(180deg, #08beec, #1549f3 100%) !important;
+    color: #fff;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    left: 0px;
+    bottom: 0px;
+    transition: all 500ms ease;
+    z-index: 0;
+}
+
+.choose-magento-grid-item:hover:before   {
+    top: 0%;
+    height: 100%;
+}
+
+.choose-magento-grid-item * {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+
+.choose-magento-grid-item > h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: normal !important;
+}
+
+.choose-magento-grid-item > p {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.choose-magento-grid-item:hover h4,
+.choose-magento-grid-item:hover p {
+  color: white;
+}
+
+@media screen and (max-width:1024px){
+    .choose-magento-grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose-magento-grid-item {
+        height: 320px;
+     }
+}
+@media screen and (max-width:580px){
+    .choose-magento-grid-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+     .choose-magento-grid-item {
+     
+        height: 250px !important;
+     }
+  }
+  @media screen and (max-width:400px){
+
+     .choose-magento-grid-item {
+     
+        height: 300px !important;
+     }
+  }
+@media screen and (max-width: 768px) {
+    .choose-magento-outer-container {
+        padding: 40px 30px;
+    }
+
+    .choose-magento-grid-item > h4 {
+        text-align: left;
+    }
+    .choose-magento-grid-item > p{
+        text-align:left;
+    }
+    .choose-magento-grid-item {
+       height: 320px;
+    }
+}
+@media screen and (max-width: 375px){
+    .choose-magento-grid-item {
+        height: 400px !important;
+     }
+}

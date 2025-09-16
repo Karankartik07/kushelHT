@@ -1,0 +1,129 @@
+.telephonics-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    max-width: 1470px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .telephonics-smart{
+    max-width: 1340px;
+    margin: auto;
+  }
+  
+  .telephonics-content {
+    flex: 1 1 500px;
+  }
+  
+  .telephonics-title {
+    font-size: 2.6rem;
+    font-weight:600;
+    margin-bottom: 2rem !important;
+    line-height: 1.2;
+  }
+  
+  .telephonics-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .telephonics-list-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+  }
+  
+  .telephonics-icon {
+    color: #397eff;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  
+  .telephonics-text {
+    flex: 1;
+  }
+  
+  .telephonics-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+  
+  .telephonics-description {
+    margin: 0;
+    color: #555;
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .telephonics-image-wrapper {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .telephonics-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .telephonics-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .telephonics-list-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .telephonics-text {
+      text-align: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .telephonics-list-item {
+      text-align: center;
+      gap: 0.5rem;
+    }
+  
+    .telephonics-icon {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .telephonics-title {
+      font-size: 21px;
+      text-align: center;
+    }
+  .features-section{
+    padding: 30px 30px;
+  }
+    .telephonics-subtitle {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .telephonics-description {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 10px 0px 0px 0px;
+    }
+  
+    .telephonics-section {
+      padding: 2rem 2rem;
+      gap: 0px;
+    }
+  }
+  

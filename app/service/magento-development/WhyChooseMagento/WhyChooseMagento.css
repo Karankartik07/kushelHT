@@ -1,0 +1,111 @@
+.why-choose-magento-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.why-choose-inner-container {
+    padding: 40px 60px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.why-choose-magento-left {
+    width: 65%;
+}
+.why-choose-magento-right {
+    width: 35%;
+}
+
+.why-choose-magento-left-subheading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px 0px 20px;
+}
+
+.why-choose-magento-inner-left > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0px;
+    color: #464343;
+}
+
+.why-choose-magento-inner-left-card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.why-choose-magento-inner-left-card {
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.why-choose-magento-inner-left-card:hover {
+    background: #e0f0ff;
+    border-color: #007BFF;
+}
+
+.why-choose-magento-inner-left-card > h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.why-choose-magento-inner-left-card > p {
+    font-size: 0.95rem;
+    color: #464343;
+}
+
+.why-choose-magento-right > img {
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    .why-choose-inner-container {
+        flex-direction: column;
+    }
+    
+    .why-choose-magento-left {
+        width: 100%;
+    }
+    .why-choose-magento-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-choose-magento-inner-left > h3,
+    .why-choose-magento-inner-left > h4 {
+        text-align: center;
+    }
+
+    .why-choose-magento-inner-left-card > h4 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .why-choose-inner-container {
+        padding: 40px 30px;
+    }
+
+    .why-choose-magento-inner-left-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .why-choose-magento-inner-left > h4,
+    .why-choose-magento-inner-left > h3 {
+        text-align: center;
+    }
+
+    .why-choose-magento-inner-left-card > h4 {
+        text-align: center;
+    }
+
+    .why-choose-magento-left-subheading {
+        margin:15px 0px 20px;
+    }
+}

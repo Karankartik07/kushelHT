@@ -1,0 +1,171 @@
+.prMainficardsec {
+
+    margin: 25px 46px;
+
+}
+
+.prMainficardsec2 {
+    border-radius: 10px;
+    color: white;
+    padding: 50px 50px;
+    max-width: 1720px;
+    margin: auto;
+    background-color: #0c61ff;
+}
+
+.proficardsec p {
+    width: 100%;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.profileLinksec {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileCiclr {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profileCicline {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.profileCicline2 {
+    font-size: 15px;
+
+}
+
+.fileCicgol {
+    display: flex;
+    align-items: center;
+}
+
+.fileCicgol img {
+    background-size: cover;
+
+}
+
+.linkdinBcard {
+    padding: 8px 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.linkdinBcard:hover {
+    background-color: rgba(224, 236, 255, .3);
+
+}
+
+.linkdinBcard p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.falinkIcon {
+    font-size: 30px;
+}
+
+.linkdinBcard a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .proficardsec p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .prMainficardsec {
+        padding: 30px 20px;
+    }
+
+    .proficardsec p {
+
+        font-size: 18px;
+    }
+
+    .profileCicline {
+        font-size: 16px;
+    }
+
+    .profileCicline2 {
+        font-size: 12px;
+    }
+
+    .falinkIcon {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .prMainficardsec2 {
+        padding: 40px 15px;
+    }
+
+    .proficardsec p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .profileCiclr {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profileLinksec {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .linkdinBcard {
+        text-align: center;
+    }
+
+    .linkdinBcard p {
+        justify-content: center;
+    }
+
+    .prMainficardsec {
+        margin: 10px;
+    }
+}
+
+
+@media (max-width:490px) {
+    .profileLinksec {
+        flex-direction: row;
+        gap: 16px;
+        align-items: flex-end;
+    }
+
+    .profileCiclr {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        display: grid;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:395px) {
+    .profileLinksec {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+}

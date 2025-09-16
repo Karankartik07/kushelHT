@@ -1,0 +1,178 @@
+.ecom-belgium-section {
+  background-color: #f9fafb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ecom-belgium-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 2rem !important;
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Wrapper to center the grid */
+.ecom-belgium-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.ecom-belgium-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ecom-belgium-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.ecom-belgium-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(239, 239, 239, 0.644);
+  border-left: 4px solid #007bff;
+}
+
+.ecom-belgium-icon {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.ecom-belgium-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: brightness(0) saturate(100%) invert(21%) sepia(98%) saturate(1797%)
+    hue-rotate(215deg) brightness(101%) contrast(103%);
+}
+
+.ecom-belgium-card-title {
+  max-width: 350px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.ecom-belgium-description {
+  color: #111;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 370px;
+}
+
+.ecom-belgium-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ecom-btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #0051ff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ecom-btn:hover {
+  background-color: #fff;
+  color: #0051ff;
+  border: 1px solid #0051ff;
+}
+
+.ecom-btn.secondary {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.ecom-btn.secondary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .ecom-belgium-card:hover {
+    border-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .ecom-belgium-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .ecom-belgium-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    /* 1 card per row on mobile */
+  }
+  .ecom-belgium-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    background-color: rgba(239, 239, 239, 0.644);
+    border-left: 4px solid #007bff;
+  }
+  .ecom-belgium-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .ecom-belgium-section {
+    padding: 40px 30px;
+  }
+
+  .ecom-belgium-grid-wrapper{
+    padding: 0;
+  }
+
+  .ecom-belgium-card-title {
+    font-size: 1.1rem;
+  }
+
+  .ecom-belgium-description {
+    font-size: 0.9rem;
+  }
+  .ecom-belgium-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .ecom-belgium-icon-img {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ecom-belgium-title {
+    font-size: 1.4rem;
+  }
+  .ecom-belgium-card:hover {
+    border-left: 0px;
+  }
+  .ecom-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}

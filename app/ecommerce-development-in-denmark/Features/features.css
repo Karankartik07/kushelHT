@@ -1,0 +1,122 @@
+.featuresstop1-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.featuresstop1-heading {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 30px;
+  max-width: 770px;
+
+}
+
+.featuresstop1-grid {
+  display: grid;
+  padding: 30px 0px;
+  grid-template-columns: 1fr 1fr;
+  /* border-bottom: 2px dashed #2675F6; */
+  position: relative;
+}
+
+.featuresstop1-box {
+  text-align: left;
+  padding: 30px;
+  border-bottom: 2px dashed #2675F6;
+  border-right: 2px dashed #2675F6;
+  /* default right border */
+  position: relative;
+}
+
+/* ❌ Remove right border from right-side cards */
+.featuresstop1-box:nth-child(2),
+.featuresstop1-box:nth-child(4),
+.featuresstop1-box:nth-child(6) {
+  border-right: none;
+}
+
+.featuresstop1-box:nth-child(5),
+.featuresstop1-box:nth-child(6) {
+  border-bottom: none;
+}
+
+.featuresstop1-box img {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+.featuresstop1-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.featuresstop1-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Center horizontal line between rows */
+.featuresstop1-grid::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  /* border-top: 2px dashed #2675F6; */
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .featuresstop1-section {
+    padding: 40px 30px;
+  }
+  .featuresstop1-grid {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+
+  .featuresstop1-heading {
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .featuresstop1-grid::before {
+    content: none;
+  }
+
+  .border-box {
+    border-bottom: 2px dashed #2675F6 !important;
+  }
+
+  .featuresstop1-box {
+    border-right: none;
+    border-bottom: 2px dashed #2675F6;
+    padding: 20px 0;
+  }
+
+  .featuresstop1-box:last-child {
+    border-bottom: none;
+  }
+
+  .featuresstop1-box img {
+    width: 32px;
+  }
+
+  .featuresstop1-box h3 {
+    font-size: 16px;
+  }
+
+  .featuresstop1-box p {
+    font-size: 14px;
+  }
+}

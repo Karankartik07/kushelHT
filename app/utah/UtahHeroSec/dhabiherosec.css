@@ -1,0 +1,24 @@
+.overlay-black{
+       height: 100%;
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-black h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.dhabi-hero-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/dxlykgx6w/image/upload/v1757751049/87d5b74f3530f018bd71781c33833ed999293b7e_illbrq.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+    max-width: 1720px;
+  margin: 0 auto;
+}

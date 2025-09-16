@@ -1,0 +1,95 @@
+.ecomexpert1-wrapper {
+  background-color: #f5f7ff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ecomexpert1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ecomexpert1-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ecomexpert1-left h2 {
+  font-size: 28px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.ecomexpert1-left h2 span {
+  font-weight: 700;
+}
+
+.ecomexpert1-btn {
+  background-color: #0050e0;
+  color: #fff;
+  padding: 15px 24px;
+  font-size: 15px;
+  border: none;
+  border-radius: 39px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.ecomexpert1-btn:hover {
+  background-color: #003bb3;
+}
+
+.ecomexpert1-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ecomexpert1-right p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ecomexpert1-container {
+    flex-direction: column;
+  }
+
+  .ecomexpert1-left h2 {
+    font-size: 22px;
+    /* text-align: center; */
+  }
+  .ecomexpert1-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ecomexpert1-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .ecomexpert1-right p {
+    font-size: 14px;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 480px) {
+  .ecomexpert1-left{
+    display: block;
+  }
+}

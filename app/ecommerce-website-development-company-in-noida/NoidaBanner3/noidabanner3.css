@@ -1,0 +1,144 @@
+/* Main Section */
+.ecommerce-section {
+  background-color: #f5f8ff;
+  padding: 60px 20px;
+}
+
+.ecommerce-content {
+  max-width: 1720px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+@media (min-width: 1024px) {
+  .ecommerce-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Text Styling */
+.ecommerce-text {
+  flex: 1;
+}
+
+.section-tag {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.h5-tag {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 0;
+  max-width: 400px;
+  text-align: left;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000;
+}
+
+.paragraph {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.btn-pri {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  margin: 0;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  margin: 0;
+}
+
+.btn-outline:hover {
+  background-color: #e0ecff;
+}
+
+/* Image Styling */
+.ecommerce-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ecommerce-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .ecommerce-content {
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .h5-tag {
+    font-size: 21px !important;
+    max-width: 100% !important;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .highlight {
+    padding-left: 0;
+    display: inline;
+  }
+
+  .ecommerce-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+
+  /* .btn-group {
+    justify-content: center;
+  } */
+
+  .h5-tag {
+    font-size: 19px;
+    text-align: left;
+  }
+  .paragraph {
+    text-align: left;
+  }
+}

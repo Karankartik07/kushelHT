@@ -1,0 +1,112 @@
+.online-why-choose-section {
+    text-align: center;
+    background-color: #e8f2f5;
+  }
+  
+  .subset{
+    max-width: 1720px;
+    padding: 50px 50px !important;
+    margin: auto;
+  }
+  .online-why-choose-title {
+    font-size: 36px;
+    /* padding: 0px 0px 0px 12px; */
+    text-align: center;
+    font-weight: 700;
+    color: #1a202c;
+  }
+  
+  .online-why-choose-subtitle {
+    font-size: 18px;
+    color: #111;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  
+  .online-why-choose-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 80px;
+    margin-top: 40px;
+    /* max-width: 1149px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .online-why-choose-card {
+    background: white;
+    padding: 24px 2px 39px 63px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    border: 2px solid #2563eb;
+  }
+  
+  .online-why-choose-card h3 {
+    font-size: 23px;
+    line-height: 25px;
+  
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  .online-why-choose-card p {
+    font-size: 16px;
+    padding: 0px 10px 0px 0px ;
+    color: #111;
+    margin-top: 8px;
+  }
+  
+  .online-icon-wrapper {
+    position: absolute; 
+    top: 45px;
+    left: -24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .online-icon-wrapper img {
+    width: 24px;
+  }
+  
+  /* Blue icon styling */
+  .online-icon-blue {
+    background: #2563eb;
+  }
+  
+  @media (max-width: 768px) {
+    .online-why-choose-cards {
+      grid-template-columns: 1fr;
+      padding: 8px;
+    }
+    .subset{
+      padding: 20px 20px !important;
+    }
+    /* .online-why-choose-section {
+      padding: 20px 20px;
+    } */
+    .online-why-choose-card{
+      padding: 15px 15px 15px 30px;
+    }
+    .online-why-choose-card h3{
+      font-size: 21px;
+    }
+  }
+  
+  @media (max-width:480px){
+    .online-why-choose-title{
+      font-size: 22px;
+    }
+    .online-why-choose-subtitle{
+      font-size: 16px;
+    }
+  }
+  

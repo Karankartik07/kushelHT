@@ -1,0 +1,162 @@
+/* Main Section */
+.section--1 {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 70px 60px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.ext-class-banner {
+  font-size: 23px !important;
+}
+/* Heading */
+.conflict--1-div h6 {
+  width: 930px;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  margin: 15px auto 10px;
+  font-weight: 500;
+  /* line-height: 2.8rem; */
+}
+
+.bigcommerce-section9-heading {
+  text-align: center;
+}
+
+.conflict--1-div h4 {
+  text-align: center;
+  letter-spacing: 0 !important;
+  font-size: 19px;
+  /* line-height: 28px; */
+  width: 1160px;
+  margin: auto;
+  font-weight: 400;
+  color: black;
+  margin-top: 10px;
+  width: 100%;
+  line-height: 1.6rem;
+}
+
+/* Flex Container - 3 Cards in a Row */
+.conflict--1-flex {
+  display: grid;
+  align-items: self-start;
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+  gap: 20px;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+/* Individual Card */
+.conflict--1-flex-content {
+  /* background: #f8f9fa; */
+  padding: 10px 10px 0px 0px;
+  text-align: left;
+}
+
+/* .conflict--1-flex-content:hover {
+  transform: translateY(-5px);
+}
+ */
+/* Icons */
+.iconnImage {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.conflict--1-flex h5 {
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.894);
+}
+
+.conflict--1-flex p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+/* Tablet View - 2 Cards Per Row */
+@media screen and (max-width: 1024px) {
+  .section--1 {
+    padding: 60px 30px;
+  }
+
+  .conflict--1-flex {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+  }
+  .conflict--1-div h6 {
+    width: 100%;
+  }
+}
+
+/* Mobile View - 1 Card Per Row */
+@media screen and (max-width: 768px) {
+  .conflict--1-div h6 {
+    width: 100%;
+  }
+  .section--1 {
+    padding: 50px 20px;
+  }
+
+  .conflict--1-flex {
+    grid-template-columns: repeat(1, 1fr); /* 1 Column */
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .iconnImage {
+    display: block;
+    margin: auto;
+  }
+
+  .conflict--1-flex h5 {
+    text-align: center;
+  }
+
+  .conflict--1-div h4 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section--1 {
+    padding: 20px 30px 10px;
+  }
+
+  .iconnImage {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto !important;
+  }
+
+  .conflict--1-div h4 {
+    font-size: 17px;
+    text-align: center;
+    margin: 30px 0px 50px;
+  }
+
+  .conflict--1-flex h5 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .conflict--1-flex p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

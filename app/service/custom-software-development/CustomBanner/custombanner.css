@@ -1,0 +1,180 @@
+.custom-banner-section {
+    background: url('https://res.cloudinary.com/dqjbzgksw/image/upload/v1749619676/banner-bg_as2fkf.png');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.custom-banner-overlay {
+    background: rgba(0, 0, 0, .7);
+    padding: 60px 20px;
+    min-height: 500px;
+}
+
+.custom-banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-banner-heading {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.custom-banner-heading .custom-banner-span {
+    color: #fff;
+    font-size: 55px !important;
+}
+
+.custom-banner-subtext {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 20px 0;
+    color: #ddd;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.custom-banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.custom-banner-btn-yellow,
+.custom-banner-btn-outline {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-banner-btn-yellow {
+    background-color: #0c61ff;
+    color: #fff;
+    border: none;
+}
+
+.custom-banner-btn-yellow:hover {
+    background-color: #fff;
+    color: #0c61ff; 
+}
+
+.custom-banner-btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.custom-banner-btn-outline:hover {
+    background-color: #0c61ff;
+    color: #fff;
+    border-color: #0c61ff;
+}
+
+.custom-banner-clutch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #f2f2f2;
+}
+
+.custom-banner-rating {
+    font-weight: 600;
+    color: #ffc107;
+}
+ 
+@media (max-width: 1024px) {
+    .custom-banner-heading {
+        font-size: 48px;
+    }
+
+    .custom-banner-heading .custom-banner-span{
+        font-size: 48px !important;
+    }
+
+    .custom-banner-subtext {
+        font-size: 17px;
+        max-width: 90%;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .custom-banner-heading {
+        font-size: 34px;
+    }
+
+    .custom-banner-heading .custom-banner-span{
+        font-size: 34px !important;
+    }
+
+    .custom-banner-subtext {
+        font-size: 16px;
+        padding: 16px 0;
+    }
+
+    .custom-banner-buttons { 
+        gap: 15px;
+    }
+
+    .custom-banner-btn-yellow,
+    .custom-banner-btn-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .custom-banner-clutch {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .custom-banner-heading {
+        font-size: 26px;
+    }
+
+    .custom-banner-heading .custom-banner-span{
+        font-size: 26px !important;
+    }
+
+    .custom-banner-subtext {
+        font-size: 15px;
+        padding: 12px 0;
+        max-width: 100%;
+    }
+
+    .custom-banner-overlay {
+        padding: 40px 15px;
+    }
+
+    .custom-banner-buttons {
+        gap: 12px;
+    }
+
+    .custom-banner-btn-yellow,
+    .custom-banner-btn-outline {
+        font-size: 15px;
+        padding: 10px 24px;
+        width: 60%;
+    }
+
+    .custom-banner-clutch {
+        font-size: 14px;
+    }
+}

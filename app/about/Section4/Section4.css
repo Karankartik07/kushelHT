@@ -1,0 +1,72 @@
+.secBusMain{
+    max-width: 1720px;
+    padding: 60px 50px;
+    margin: auto;
+}
+.secBussiness{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+ gap: 9.4%;
+}
+.secBuspara p{
+
+  line-height:52px;
+    width: 600px;
+    font-size: 42px;
+    font-weight:500;
+    color: #0c0c0c;
+}
+.devParacontent p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #323030;
+}
+.devParacontepara{
+    padding: 15px 0px;
+}
+
+@media(max-width:1200px){
+    .secBussiness{
+        flex-direction: column;
+    }
+}
+@media (max-width: 1024px) {
+    .secBuspara p {
+      width: 100%;
+      font-size: 36px;
+      text-align: center;
+    }
+  
+    .devParacontent p {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .secBussiness {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .secBusMain {
+      padding: 40px 20px;
+    }
+  
+    .secBuspara p {
+      line-height: 30px;
+      font-size: 28px;
+    }
+  
+    .devParacontent p {
+      font-size: 14px;
+    }
+  
+    .devParacontepara {
+      padding: 10px 0;
+    }
+  }
+  

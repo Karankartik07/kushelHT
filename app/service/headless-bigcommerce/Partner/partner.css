@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .partnerss {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .partnerss-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* LEFT SIDE */
+  .partnerss-left {
+    flex: 1 1 500px;
+  }
+  
+  .partnerss-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    max-width: 100%;
+    color: #111;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .highlight {
+    color: #0052cc;
+  }
+  
+  .partnerss-description p {
+    font-size: 1rem;
+    color: #333;
+    padding: 20px 0px 0px 0px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  
+  .partnerss-description a {
+    color: #0052cc;
+    text-decoration: underline;
+  }
+  
+  /* RIGHT SIDE */
+  .partnerss-right {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .partnerss-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  
+  /* Tablets and small desktops */
+  @media (max-width: 991px) {
+    .partnerss-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .partnerss-left,
+    .partnerss-right {
+      flex: 1 1 100%;
+    }
+  
+    .partnerss-heading h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Large phones */
+  @media (max-width: 768px) {
+    .partnerss {
+      padding: 40px 30px !important;
+    }
+  
+    .partnerss-heading h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .partnerss-description p {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 480px) {
+    .partnerss {
+      padding: 30px 12px;
+    }
+  
+    .partnerss-heading h2 {
+      font-size: 1.3rem;
+    }
+  
+    .partnerss-description p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,135 @@
+.features-section {
+    padding: 50px 30px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .features-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .features-heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    max-width: 1129px;
+    color: #111;
+    line-height: 1.3;
+  }
+  
+  .features-subheading {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #6b7280;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  .features-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 1.5rem;
+    margin-top: 3rem;
+    justify-items: center; /* centers items horizontally inside each grid cell */
+}
+
+  
+  .feature-card {
+    background-color: #f4f8f6;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    flex: 1 1 300px;
+    max-width: 405px;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.04);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card img {
+    width: 60px;
+    margin: 0 auto 1.2rem;
+    /* filter: hue-rotate(444deg) saturate(209%); */
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  
+  .feature-card p {
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+    color: #374151;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 992px) {
+    .features-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile view - 1 card */
+@media (max-width: 600px) {
+    .features-cards {
+        grid-template-columns: 1fr;
+    }
+}
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .features-heading {
+      font-size: 2rem;
+    }
+    .features-subheading {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .features-heading {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .features-subheading {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .feature-card {
+      padding: 1.5rem 1rem;
+    }
+  
+    .feature-card img {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .features-heading {
+      font-size: 1.4rem;
+    }
+  
+    .features-subheading {
+      font-size: 0.9rem;
+    }
+  
+    .feature-card h3 {
+      font-size: 1.15rem;
+    }
+  
+    .feature-card p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,238 @@
+.headless-ssec--2 {
+    max-width: 1380px;
+      height: auto;
+      background-color: #ecf1f4;
+      margin:auto;
+      border-radius: 5px;
+      padding: 50px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 50px auto !important;
+      
+    }
+    .headless-ccon--2-div {
+    /* gap: 20px; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      /* flex-wrap: wrap; */
+      width: 100%;
+    }
+    
+    .audit-img {
+      width: 200px !important;
+      height: auto;
+    }
+    
+    .headless-con--2-div-contentt {
+      width: 50%;
+      /* min-width: 320px; */
+      text-align: left;
+    }
+    
+    .headless-con--2-div-contentt h3 {
+    
+      font-weight: 600;
+      color: #111;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    
+  
+    .headless-btn-auditCom{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 15px 30px;
+      border-radius: 30px;
+      /* border: none; */
+      border: 1px solid #0c61ff;
+      font-size: 18px;
+      background-color: #0c61ff;
+      color: rgba(255, 255, 255, 0.873);
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    
+    .headless-btn-auditCom:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #0c61ff;
+      border: 1px solid #0c61ff;
+    }
+    
+    /* Responsive Styles */
+    @media screen and (max-width: 1024px) {
+      .sec--2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+      }
+    
+      .headless-ccon--2-div {
+        flex-direction: column;
+        text-align: center;
+        gap: 17px;
+      }
+    
+      .headless-con--2-div-contentt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    
+      .audit-img {
+        width: 220px;
+        margin: auto !important;
+      }
+      .headless-con--2-div-contentt h3{
+        text-align: center;
+      }
+    }
+  
+
+    
+    @media screen and (max-width: 768px) {
+      .sec--2 {
+        box-shadow: none;
+        /* padding: 20px; */
+      }
+    
+      .headless-con--2-div-contentt h3 {
+        font-size: 24px;
+      }
+    
+   
+      .headless-btn-auditCom {
+        padding: 14px 30px;
+        font-size: 16px;
+      }
+    
+      .audit-img {
+        width: 180px;
+        margin: auto;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .sec--2 {
+        box-shadow: none !important;
+          /* width: 100% !important; */
+        padding: 0;
+     
+        /* padding: 10px 15px 10px 15px; */
+      }
+    
+      .headless-con--2-div-contentt h3 {
+        font-size: 20px !important;
+        text-align: center;
+      }
+  
+      .headless-coon--2 {
+        width: 100%;
+      }
+    
+   
+      .headless-btn-auditCom{
+        padding: 12px 25px;
+        font-size: 14px;
+      }
+    
+      .audit-img {
+        width: 160px;
+        margin: auto !important;
+      }
+    }
+  
+  
+  
+  /* Image container */
+  .audit-img {
+    /* max-width: 68%; */
+    height: auto;
+    width: 250px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Content box */
+  .headless-con--2-div-contentt {
+    width: 50%;
+    min-width: 320px;
+    text-align: left;
+  }
+  
+  
+  
+  
+  
+  .btn-container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+    .headless-ssec--2 {
+  
+        padding: 30px;
+    }
+  
+    .headless-ccon--2-div {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .headless-con--2-div-contentt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+  
+    .audit-img {
+        max-width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .headless-con--2-div-contentt h3 {
+        font-size: 24px;
+    }
+  
+  
+    .btn-audit {
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+  
+    .audit-img {
+        max-width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sec--2 {
+        padding: 20px 10px 20px 10px;
+        width: 100%;
+      
+    }
+  
+    .con--2-div-content h3 {
+        font-size: 20px;
+    }
+  
+  
+    .headless-btn-auditCom {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+  
+    .audit-img {
+        max-width: 60%;
+    }
+  }
+  

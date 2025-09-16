@@ -1,0 +1,180 @@
+
+
+  .ourValues_k82s {
+    padding: 50px 40px;
+    max-width: 1720px;
+    margin: auto;
+  }
+  
+  .ourValuesHeader_k82s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ourValuesHeader_k82s h3 {
+    font-size: 42px;
+    font-weight: 400;
+  }
+  
+  .ourValuesHeader_k82s h3 span {
+    color: #0c61ff;
+    font-weight: 500;
+  }
+  
+  .navButtons_k82s {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .navBtn_k82s {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navBtn_k82s.active,
+  .navBtn_k82s:hover {
+    background-color: #0c61ff;
+    color: white;
+    border-color: #0c61ff;
+  }
+  
+  .navBtn_k82s:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .sliderWrapper_k82s {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .valuesGrid_k82s {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    flex-wrap: nowrap;
+  
+  }
+  
+  .valueCard_k82s {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    min-height: 270px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+  }
+  
+  .valueCard_k82s:hover,
+  .valueCard_k82s.active_k82s {
+    background-color: rgba(224, 236, 255, 0.3);
+    border-color: #0c61ff;
+  }
+  
+  .valueCard_k82s.active_k82s {
+    width: 400px;
+    padding: 25px;
+  }
+  
+  .iconWrapper_k82s {
+    font-size: 40px;
+    color: #0c61ff;
+    margin-bottom: 15px;
+  }
+  
+  .valueCard_k82s h3 {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .valueCard_k82s p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+ 
+ @media (max-width:1200px){
+  .valueCard_k82s,
+    .valueCard_k82s.active_k82s {
+      width:300px;
+      padding: 20px;
+    }
+ }
+  
+  @media (max-width: 1024px) {
+    .valueCard_k82s,
+    .valueCard_k82s.active_k82s {
+      width: 280px;
+      padding: 20px;
+    }
+  
+    .valueCard_k82s h3 {
+      font-size: 22px;
+    }
+  
+    .valueCard_k82s p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ourValuesHeader_k82s h2 {
+      font-size: 28px;
+    }
+  
+    .valueCard_k82s,
+    .valueCard_k82s.active_k82s {
+      width: 100%;
+    }
+  
+    .navBtn_k82s {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ourValues_k82s {
+      padding: 30px 15px;
+    }
+  
+    .ourValuesHeader_k82s h2 {
+      font-size: 24px;
+    }
+  
+    .valueCard_k82s h3 {
+      font-size: 20px;
+    }
+  
+    .valueCard_k82s p {
+      font-size: 15px;
+    }
+  
+    .navBtn_k82s {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,123 @@
+.latest-articles {
+  background-color: #f0f8ff;
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  max-width: 1720px;
+  margin: auto;
+}
+.extraClas {
+  padding: 40px 0px !important;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+  margin-top: 30px !important;
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+}
+
+.article-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+ object-fit: fill;
+  display: block;
+}
+
+.article-content {
+  padding: 16px;
+  min-height: 220px;
+}
+
+.article-date {
+  color: #007aff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+
+  display: inline; /* ensures per-line effect */
+  position: relative;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+
+  /* Animated border-bottom */
+  background-image: linear-gradient(to right, black 100%, transparent 0);
+  background-repeat: no-repeat;
+  background-position: 0 100%; /* stick to bottom */
+  background-size: 0% 2px;     /* start hidden */
+  transition: background-size 0.6s ease;
+}
+
+.article-title:hover {
+  background-size: 100% 2px; /* expand underline left → right */
+}
+
+.article-desc {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1150px) {
+  .article-content {
+    min-height: 319px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .articles-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article-content {
+    min-height: 200px;
+  }
+  .blog-content {
+    max-width: 1400px !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  .articles-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .latest-articles {
+    padding: 40px 24px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .article-card {
+    max-width: 270px;
+  }
+}

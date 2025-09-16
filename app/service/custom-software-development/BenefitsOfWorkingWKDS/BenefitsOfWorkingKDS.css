@@ -1,0 +1,187 @@
+.benefits-of-working-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.benefits-of-working-inner-container {
+    padding: 40px 60px;
+}
+
+.benefits-of-working-heading {
+    text-align: center;
+}
+
+.benefits-of-working-flex-container {
+    margin-top: 35px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.benefits-of-working-right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefits-of-working-cards {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #bab3b3;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.benefits-of-working-cards>h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.benefits-of-working-outer-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.benefits-of-working-inner-container {
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.benefits-of-working-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits-of-working-flex-container {
+    margin-top: 35px;
+    display: flex;
+    gap: 40px;
+    /* justify-content: space-between; */
+}
+
+.benefits-of-working-right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefits-of-working-cards {
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.benefits-of-working-cards>h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+
+.benefits-of-working-cards>p {
+    font-size: 0.85rem;
+}
+
+.benefits-of-working-cards:hover {
+    background: url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1744697869/CSD-bg-img-05-1_rcc3xf.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-of-working-cards>p {
+    font-size: 0.85rem;
+    /* margin-top: 10px; */
+}
+
+.benefits-of-working-cards:hover {
+    background: url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1744697869/CSD-bg-img-05-1_rcc3xf.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+@media screen and (max-width:1150px) {
+    .benefits-of-working-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.benefits-of-working-right-responsive {
+    display: none;
+}
+
+
+@media screen and (max-width:1000px) {
+    .benefits-of-working-right {
+        display: none;
+    }
+
+    .benefits-of-working-left {
+        width: 30%;
+    }
+
+    .benefits-of-working-right-responsive {
+        display: block;
+        width: 70%;
+    }
+
+    .benefits-of-working-cards-responsive {
+        background: url('https://res.cloudinary.com/dd9tagtiw/image/upload/v1744697869/CSD-bg-img-05-1_rcc3xf.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+
+    .benefits-of-working-flex-container {
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .benefits-of-working-slide-btn-cont {
+        justify-content: flex-end;
+        display: flex
+    }
+
+    .benefits-of-working-left > img {
+        width: 100%;
+        max-height: 300px;
+        object-fit:cover;
+        object-position: top;
+        border-radius: 10px;
+    }
+
+    .benefits-of-working-cards-responsive {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .benefits-of-working-left > img {
+        height: auto;
+    }
+
+    .benefits-of-working-inner-container {
+        padding: 40px 30px;
+    }
+
+    .benefits-of-working-flex-container {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .benefits-of-working-left {
+        display: none;
+    }
+
+    .benefits-of-working-right-responsive {
+        width: 100%;
+    }
+} 

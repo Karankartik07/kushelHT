@@ -1,0 +1,199 @@
+/* Main Section */
+.londonecomproc1-section {
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.londonecomproc1-heading {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+/* Grid Layout */
+.londonecomproc1-grid {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+}
+
+/* Card Styling */
+.londonecomproc1-card {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: left;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+/* Hover effect */
+.londonecomproc1-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Number */
+.londonecomproc1-number {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 17px;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Card Title */
+.londonecomproc1-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Card Paragraph */
+.londonecomproc1-card p {
+  font-size: 15px;
+  padding: 15px 0px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Border Color Variants */
+.londonecomproc1-card.green {
+  border-color: #24b31b;
+}
+
+.londonecomproc1-card.red {
+  border-color: #f44336;
+}
+
+.londonecomproc1-card.orange {
+  border-color: #ffa500;
+}
+
+/* CTA Button */
+.londonecomproc1-connect-btn {
+  background-color: #0047ff;
+  border: 1px solid #0051ff;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.londonecomproc1-connect-btn:hover {
+  background-color: #ffffff;
+  color: #0051ff;
+  border: 1px solid #0051ff;
+}
+
+/* Zig-Zag Effect */
+.londonecomproc1-card:nth-child(even) {
+  transform: translateY(30px);
+}
+
+.londonecomproc1-card:nth-child(odd) {
+  transform: translateY(-30px);
+}
+
+/* Remove zig-zag on tablets & below */
+@media (max-width: 768px) {
+  .londonecomproc1-card {
+    transform: none !important;
+  }
+}
+
+/* ========== Responsive Styling ========== */
+@media (max-width: 768px) {
+.londonecomproc1-section {
+    padding: 50px 40px;
+  }
+
+  .londonecomproc1-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .londonecomproc1-heading {
+    font-size: 26px;
+  }
+
+  .londonecomproc1-card h3 {
+    font-size: 16px;
+  }
+
+  .londonecomproc1-card p {
+    font-size: 14px;
+  }
+
+  .londonecomproc1-connect-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .londonecomproc1-section {
+    padding: 50px 40px;
+  }
+
+  .londonecomproc1-heading {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .londonecomproc1-card h3 {
+    font-size: 15px;
+  }
+
+  .londonecomproc1-card p {
+    font-size: 13.5px;
+  }
+
+  .londonecomproc1-connect-btn {
+    font-size: 14px;
+    padding: 9px 18px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .londonecomproc1-section {
+    padding: 40px 12px;
+  }
+
+  .londonecomproc1-heading {
+    font-size: 22px;
+  }
+
+  .londonecomproc1-card {
+    padding: 20px 15px;
+  }
+
+  .londonecomproc1-card h3 {
+    font-size: 14px;
+  }
+
+  .londonecomproc1-card p {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .londonecomproc1-connect-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}

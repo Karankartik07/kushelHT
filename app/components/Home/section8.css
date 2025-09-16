@@ -1,0 +1,168 @@
+/* NEXT JS ADDED  */
+
+.h2s8wrap{
+    position: relative;
+    width: 100%;
+    background-color: #F6F5F4;
+}
+
+.h2s8cont{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 70px 20px;
+
+
+}
+.s8para1{
+         
+font-size: 20px;
+font-weight: 400;
+line-height: 54px;
+text-align: center;
+color: #000000;
+}
+
+.s8h4{
+         
+font-size: 34px;
+font-weight: 600;
+line-height: 54px;
+text-align: center;
+color: #000000;
+}
+.s8h4 span{
+   text-transform: lowercase !important;
+}
+
+.s8para2{
+         
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #33475B;
+max-width: 666px;
+margin: 0 auto;
+}
+
+.ecoTechBoxes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 0px;
+}
+.singleEcoBox{
+    background: #FFFFFF;
+ padding: 60px 80px;
+ width: 90% ;
+ margin: 0 auto;
+ display: flex;
+ gap: 40px;
+}
+
+.singleEcoBox img{
+  width: 172px;
+  height: 42px;
+}
+
+.sEcoRight{
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+}
+.sEcoRight .scoripara1{
+         
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    max-width: 830px;
+color: #33475B;    
+}
+
+.leamorediv{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start !important;
+}
+.leamorediv .text32{
+         
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+color: #000000;    
+transition: 0.3s all;
+width: fit-content;
+cursor: pointer;
+}
+.leamorediv .text32:hover {
+    color: #1063ff;
+} 
+
+.leamorediv .text32:hover + .textbelowline {
+    border: 1px solid #1063ff;
+}
+
+.leamorediv .textbelowline {
+    width: 48px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+
+
+@media (max-width:900px) {
+    .singleEcoBox{
+        background: #FFFFFF;
+     padding: 60px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+    }
+    .leamorediv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start !important;
+    }
+    .text32{
+        text-align: left !important;
+    }
+}
+
+
+@media (max-width:600px) {
+    
+.s8para1{
+font-size: 20px;
+
+}
+
+.s8h4{
+font-size: 26px;
+line-height: 36px !important;
+
+}
+
+.s8para2{
+font-size: 16px;
+
+}
+
+}
+
+@media (max-width:550px) {
+    .singleEcoBox{
+     padding: 20px 16px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .h2s8cont{
+        padding: 24px 20px;
+    }
+  
+}

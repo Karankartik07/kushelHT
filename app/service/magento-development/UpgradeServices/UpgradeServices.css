@@ -1,0 +1,80 @@
+.magento-upgrade-services-container {
+    max-width: 1720px;
+    margin: 0px auto;
+}
+
+.magento-upgrade-services-inner-container {
+    padding: 0px 50px 50px 50px;
+    width: 100%;
+}
+
+.magento-upgrade-services-inner-container > .magento-upgrade-services-heading {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.magento-upgrade-services-inner-container > p {
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.magento-upgrade-services-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.magento-upgrade-services-card-left,
+.magento-upgrade-services-card-right {
+   flex: 1;
+}
+
+.magento-upgrade-services-card-right > h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+}
+
+.magento-upgrade-services-card-right-ul {
+    list-style: square !important;
+    padding-left: 22px;
+    margin-top: 15px;
+}
+
+.magento-upgrade-services-card-right-li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #2e2d2d;
+    margin: 5px 0px;
+}
+
+.magento-upgrade-services-card:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1100px) {
+    .magento-upgrade-services-card {
+        flex-direction: column;
+    }
+
+    .magento-upgrade-services-card:nth-child(2){
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .magento-upgrade-services-inner-container {
+        padding: 0px 30px 40px 30px;
+    }
+
+    .magento-upgrade-services-card-right > h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+    }
+
+    .magento-upgrade-services-card-right-li {
+        font-size: 1rem;
+    }
+}

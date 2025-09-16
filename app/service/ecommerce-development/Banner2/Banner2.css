@@ -1,0 +1,275 @@
+.sec-sectionBan2 {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ded4d48b;
+    color: #333;
+    /* padding: 25px 20px 33px 20px; */
+  }
+  
+  .sec-containerBan2 {
+    display: flex;
+    max-width: 1720px;
+    padding: 50px 50px;
+    margin: auto;
+    align-items: center;
+    gap: 5rem;
+    /* padding: 20px 0px 20px 0px; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .sec-contentBan2 {
+    flex: 1;
+    /* min-width: 320px; */
+    text-align: left;
+  }
+  
+  .sec-tagBan2 {
+    color: #222;
+    /* font-size: 14px; */
+    /* text-transform: uppercase; */
+    border-left: 2px solid #0c61ff;
+    padding-left: 8px;
+   
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .h3Ban2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin: 19px 0;
+    line-height: 45px;
+    color: #222;
+  
+  }
+  
+  .sec-descriptionBan2 {
+    padding: 15px 0px 0px 0px;
+    font-size: 18px !important;
+    color: #222222;
+    /* color: #555; */
+    line-height: 28px;
+    font-weight: 500;
+    max-width: 87%;
+  }
+  
+  .pointsBan2 {
+    padding: 16px 16px;
+    color: #444;
+  }
+  
+  .pointsBan2 li {
+    list-style: disc;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  .headlinBan2 {
+    font-size: 17px;
+  }
+  
+  .buttonsssBan2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  
+  .primary-btnssBan2 {
+    background-color: #0c61ff;
+    color: white;
+    padding: 15px 36px;
+    border:1px solid #0c61ff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .primary-btnssBan2:hover {
+    background-color: white;
+    color: #0c61ff;
+    border: 1px solid #0c61ff;
+  }
+  
+  .secondary-btnssBan2 {
+    background: none;
+    border: 1px solid #0c61ff;
+    color: #0c61ff;
+    padding: 15px 36px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .buttonsssBan2 a{
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    align-items: center;
+  }
+  .secondary-btnssBan2:hover{
+    background-color:#0c61ff ;
+    color: white;
+  }
+  .image-sec-container {
+    flex: 1;
+    /* min-width: 320px; */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-sec-container img {
+    width: 100%;
+    /* max-width: 450px; */
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .sec-containerBan2 {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .sec-contentBan2 {
+        text-align: center;
+    }
+    .h3Ban2 {
+      text-align: left;
+        font-size: 28px;
+    }
+    .sec-descriptionBan2 {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .buttonsssBan2 {
+        justify-content: center;
+    }
+    .pointsBan2 {
+        text-align: left;
+    }
+    .pointsBan2 li {
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .h3Ban2 {
+        font-size: 24px;
+        /* line-height: 28px; */
+        text-align: center;
+    }
+    .sec-descriptionBan2 {
+        font-size: 15px;
+    }
+    .primary-btnssBan2,
+    .secondary-btnssBan2 {
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+    .image-sec-container img {
+        max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sec-sectionBan2{
+      width: 100%;
+      padding: 1px 20px 4px 20px;
+    }
+    .sec-containerBan2 {
+       margin: 40px auto;
+        padding: 10px;
+    }
+    .h3Ban2 {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+    }
+    .sec-descriptionBan2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .pointsBan2{
+      line-height: 15px;
+    }
+    .primary-btnssBan2,
+    .secondary-btnssBan2 {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    .pointsBan2 li {
+        font-size: 14px;
+    }
+    .buttonsssBan2 a{
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+   
+    .sec-containerBan2 {
+     
+      padding: 10px; 
+      gap: 1.5rem;
+    }
+  
+    .sec-contentBan2 {
+      text-align: center;
+    }
+  
+    .h3Ban2 {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  
+    .sec-descriptionBan2 {
+      font-size: 13px;
+      line-height: 20px;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .pointsBan2 {
+      padding: 10px 0;
+      text-align: left;
+    }
+  
+    .pointsBan2 li {
+      font-size: 12px;
+      margin-bottom: 6px;
+      line-height: 18px;
+    }
+  
+    .buttonsssBan2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .primary-btnssBan2,
+    .secondary-btnssBan2 {
+      /* width: 100%; */
+      font-size: 13px;
+      padding: 10px 15px;
+    }
+  
+    .image-sec-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-sec-container img {
+      max-width: 95%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+  

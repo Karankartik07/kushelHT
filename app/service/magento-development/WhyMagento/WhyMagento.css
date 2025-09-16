@@ -1,0 +1,98 @@
+.why-magento-container {
+    max-width: 1720px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.why-magento-inner-container {
+    padding: 50px 50px;
+}
+
+.why-magento-heading {
+    text-align: center;
+}
+
+.why-magento-grid-container {
+    display: grid;
+    gap: 30px;
+    margin-top: 45px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.why-magento-grid-item {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.why-magento-grid-item > img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.why-magento-grid-item:hover {
+    border: 1px solid blue;
+    background: #1668ff14;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.why-magento-grid-item > h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.why-magento-grid-item > p {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+@media (max-width:1024px){
+    .why-magento-grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .why-magento-inner-container {
+        padding: 40px 30px;
+    }
+
+    .why-magento-grid-item > img {
+        display: block;
+        margin: auto;
+    }
+
+    .why-magento-grid-item > h3 {
+        text-align: center;
+    }
+
+    .ShopifyServices__heading {
+        text-align: center;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .why-magento-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .why-magento-grid-container {
+        margin-top: 30px;
+    }
+
+    .why-magento-grid-item > h3 {
+        text-align: center;
+    }
+
+    .why-magento-grid-item > img {
+        display: block;
+        margin: auto;
+    }
+    .why-magento-grid-item > p {
+        text-align: center;
+    }
+}
+

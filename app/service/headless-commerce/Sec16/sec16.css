@@ -1,0 +1,123 @@
+.samsung-container {
+    background-color: #f8fcf9;
+    padding: 30px 20px;
+    font-family: sans-serif;
+    color: #111;
+  }
+  
+  .samsung-wrapper {
+    max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .samsung-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .samsung-heading {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  .samsung-description {
+    font-size: 17px;
+    color: #111;
+    padding: 20px 10px 0px 10px;
+    line-height: 1.6;
+  }
+  
+  .samsung-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .samsung-image {
+    max-width: 100%;
+    width: 100%;
+    max-width: 628px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Tablet & above */
+  @media (min-width: 768px) {
+    .samsung-wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      gap: 60px;
+    }
+  
+    .samsung-text {
+      text-align: left;
+    }
+  
+    .samsung-heading {
+      font-size: 45px !important;
+    }
+  
+    .samsung-description {
+      padding: 20px 0px 0px 0px;
+      font-size: 18px;
+    }
+  
+    .samsung-image-box {
+      justify-content: flex-end;
+    }
+  }
+  
+  /* Mobile max 480px */
+  @media (max-width: 480px) {
+    .samsung-heading {
+      font-size: 22px;
+    }
+  
+    .samsung-description {
+      font-size: 15.5px;
+      padding: 10px 5px 0px 0px;
+    }
+  
+    .samsung-image {
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile max 400px */
+  @media (max-width: 400px) {
+    .samsung-heading {
+      font-size: 22px;
+    }
+  
+    .samsung-description {
+      font-size: 14.5px;
+    }
+  
+    .samsung-image {
+      border-radius: 6px;
+    }
+  }
+  
+  /* Mobile max 375px */
+  @media (max-width: 375px) {
+    .samsung-heading {
+      font-size: 22px;
+    }
+  
+    .samsung-description {
+      font-size: 13.8px;
+      padding: 10px 4px 0 4px;
+    }
+  
+    .samsung-image {
+      border-radius: 6px;
+    }
+  }
+  

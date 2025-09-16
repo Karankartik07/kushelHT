@@ -1,0 +1,31 @@
+#AiUnique_solution p {
+    width: 70px;
+    height: 0px;
+    border: 2px solid #B30739;
+}
+
+#case3Portfolio_Aii {
+    background: #681317;
+}
+
+#case2_Background_Port {
+    background-color: #F9F9F9;
+}
+
+#imgPortfolio_Phone {
+    max-width: 1300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#imgPortfolio_Ai_Phone {
+    max-width: 100%;
+}

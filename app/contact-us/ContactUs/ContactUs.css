@@ -1,0 +1,418 @@
+
+.contactMainku{
+  padding:50px 50px 20px 50px;
+ margin-top: 130px;
+ background: linear-gradient(280deg, #89c8fb92, #c8d5f950 62.02%, #f9f9f4);
+}
+.contact-containerKush{
+  max-width: 1720px;
+flex-direction: row-reverse;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* padding: 0px 90px; */
+  /* gap: 40px; */
+border-radius: 10px;
+}
+.contact-us-section .left-box .row-box .col-box {
+  margin: 40px 0 0;
+  align-items: center;
+}
+
+
+.row-box{
+  padding-top: 20px 0px;
+}
+
+
+
+.iconImgReact{
+  color: #0c61ff !important;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+.contact-us-section .left-box .row-box .col-box .desp {
+  flex-basis: 92%;
+  padding-left: 10px;
+}
+
+.contact-us-section .left-box .row-box .col-box .desp h4 {
+  color: #000000;
+  /* font-weight: 500; */
+}
+.col-box{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding:15px 0px 9px 0px !important;
+}
+.desp h4 {
+  letter-spacing: 0 !important;
+ padding-top: 5px;
+  font-size: 18px;
+  color: #110302;
+  font-weight: 500;
+}
+.desp p{
+  line-height: 20px;
+}
+.contact-us-section .left-box .row-box .col-box .desp p {
+  font-size: 14px;
+  margin: 5px 0 0;
+  line-height: 1.2;
+}
+.checkboxes-listCom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-labelCom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  background: #f3f3f3;
+  padding: 9px 20px;
+  border-radius: 50px;
+ color: #272727;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.checkbox-labelCom:hover{
+ 
+    background: #0c61ffb5;
+    color: white;
+  } 
+  .checkbox-labelCom.selectedCom{
+    background: #0c61ff;
+    color: white;
+  }
+
+
+.checkbox-labelCom input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.trustedImage{
+  padding: 20px 0px;
+}
+.form-sectionKush {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width:610px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-formKush h2 {
+  font-size:16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.input-groupKush {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-form1 input,.input-groupKush input,
+.contact-formKush textarea {
+  width: 100%;
+  padding:7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 8px 0px;
+color: #272727;
+background-color: #cccccc32;
+}
+
+.contact-form1 input:focus,.input-groupKush input:focus,
+.contact-formKush textarea:focus {
+  border-color: #0c61ff;
+  outline: none;
+}
+
+.interests-sectionCom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.interests-listCom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+ .sliderTrusted {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(166px * 10 + 35px * 9);
+  animation: scroll 15s linear infinite;
+}
+
+.sliderTrusted img {
+  object-fit: contain;
+  margin-right: 35px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .sliderTrusted {
+      padding: 0 10px;
+      margin: 40px auto;
+  }
+
+  .sliderTrusted img {
+      width: 100px;
+      height: auto;
+      margin-right: 20px;
+  }
+}
+
+.interests-listCom button {
+  padding: 10px 16px;
+  border: 1px solid #F7F7F7;;
+width: auto;
+color: #272727;
+  background: #F7F7F7;;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px;
+  transition: all 0.3s;
+height: auto;
+}
+.interests-listCom button:hover{
+  background: #0c61ffb5;
+  color: white;
+} 
+
+.file-label {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.terms-label {
+  /* padding: 13px 0px; */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.terms-label a{
+  color: #0c61ff;
+  font-weight: 500;
+}
+
+.terms-label a:hover{
+  text-decoration: underline;
+  color: #0c61ff;
+}
+.terms-lables{
+  padding: 15px 0px 0px 0px;
+}
+
+.submit-btnKush {
+  margin: 0;
+  width: 100%;
+  background: #0c61ff;
+  color: white;
+  /* padding: 12px; */
+  border: 2px solid #0c61ff;;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 45px;
+  transition: background 0.3s;
+}
+
+.submit-btnKush:hover {
+  background: white;
+  color: #0c61ff;
+  border: 2px solid #0c61ff;;
+
+}
+
+.info-sectionkUSH {
+  max-width: 580px;
+  /* padding: 30px; */
+}
+
+.highlight-text {
+  font-size: 2rem;
+  color: #0c61ff;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.trusted-by {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.logos,
+.recognitions {
+  margin-top: 15px;
+}
+.DropCont{
+  font-size: 43px;
+  font-weight: 400;
+  color: black;
+  line-height: 55px;
+}
+.DropCont span{
+  font-weight: 400;
+  color: #0c61ff;
+}
+.DropParaCont{
+  padding: 18px 0px;
+  line-height: 27px;
+  font-size: 16px;
+  width: 556px;
+  font-weight: 400;
+  color: black;;
+}
+.checkedCheckbox{
+display: none;
+ 
+}
+ .selecteCom{
+  background: #0c61ff;
+  color: white;
+}
+@media (max-width:1390px) {
+  .DropParaCont{
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .contactMainku{
+    padding: 0;
+  }
+  .contact-containerKush {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .info-sectionkUSH {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-sectionKush{
+    width: 100%;
+  }
+  .contactMainku {
+    padding: 20px;
+  }
+
+  .contact-containerKush {
+    padding: 40px 30px;
+  }
+
+  .DropCont {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .DropParaCont {
+    text-align: left;
+    width: 100%;
+  }
+
+  .input-groupKush {
+    flex-direction: column;
+  }
+  .trustedImage img{
+    width: 310px;
+  }
+}
+
+@media (max-width: 480px) {
+  .interests-listCom {
+margin-bottom: 20px;
+display: grid;
+text-align: center;
+/* grid-template-columns: repeat(2,5fr); */
+  }
+  .checkbox-labelCom{
+    display: block;
+  }
+  .form-sectionKush{
+    width: 100%;
+  }
+  .DropCont {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  .trusted-by{
+    text-align: center;
+  }
+  .DropParaCont {
+    text-align: left;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .submit-btnKush {
+    font-size: 0.9rem;
+  }
+
+  .contact-containerKush {
+    padding: 30px 20px;
+  }
+
+  .contact-formKush h2 {
+    font-size: 14px;
+  }
+  .trustedImage img{
+    width: 250px;
+  }
+  .terms-label{
+display: inline;
+  } 
+  .contact-containerKush {
+    flex-direction: column-reverse;
+  }
+  .info-sectionkUSH {
+    padding: 0;
+  }
+}

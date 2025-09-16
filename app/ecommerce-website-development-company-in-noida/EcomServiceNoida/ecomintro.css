@@ -1,0 +1,155 @@
+.services-section {
+    background-color: rgba(245, 246, 247, 1);
+    padding: 60px 20px;
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.services-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.services-subtext {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+
+.service-card {
+    /* display: flex; */
+    /* flex-direction: column;
+  justify-content: space-between;  */
+    /* gap: 32px; */
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    /* align-items: center; */
+}
+
+
+.service-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 250px;
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.service-right {
+    flex: 1;
+}
+
+.service-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #444;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.service-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-pri {
+    padding: 12px 26px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 9999px;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    background-color: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn-outline:hover {
+    background-color: #e8f0ff;
+}
+
+
+@media (max-width: 768px) {
+    .service-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+    }
+
+    .service-left {
+        margin-bottom: 20px;
+    }
+
+    .services-title {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .services-subtext {
+        font-size: 14px;
+        text-align: justify;
+      letter-spacing: normal;
+    }
+
+    .service-buttons {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 495px) {
+    .service-left {
+        display: flex;
+        align-items: start;
+        /* justify-content: center; */
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .service-title{
+        text-align: left;
+    }
+
+    .service-description {
+        text-align: left;
+    }
+
+    .btn-pri {
+        margin: 0;
+    }
+}

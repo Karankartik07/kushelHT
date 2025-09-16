@@ -1,0 +1,169 @@
+.Expect6Sec {
+
+  background-color: black;
+}
+
+.expertise-section {
+  max-width: 1720px;
+  padding: 70px 50px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.titleKuH2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.subtitleConpa {
+  text-align: center;
+  font-size: 18px;
+  color: #b0b0b0;
+  width: 760px;
+  margin: 0.5rem auto;
+}
+
+.tabsParacon {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.tab-buttonCom {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+.tab-buttonCom.active {
+  padding: 30px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.content-boxPara {
+  background-color: #1a1a1a;
+  width: 1200px;
+  margin: auto;
+}
+
+.contentline {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-containerPic img {
+  width: 460px;
+  height: auto;
+}
+
+
+.text-containerCom {
+  text-align: left;
+  max-width: 600px;
+}
+
+.descriptionCom {
+  font-size: 18px;
+  color: #d1d1d1;
+}
+
+@media(max-width:1200px) {
+  .content-boxPara {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subtitleConpa {
+    width: 90%;
+  }
+
+  .content-boxPara {
+    width: 95%;
+  }
+
+  .contentline {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-containerPic img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-containerCom {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .tab-buttonCom {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+
+  .tab-buttonCom.active {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabsParacon {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .tab-buttonCom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .titleKuH2 {
+    font-size: 22px;
+  }
+
+  .subtitleConpa {
+    font-size: 13px;
+  }
+
+  .descriptionCom {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .image-containerPic img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:450px) {
+  .expertise-section {
+    padding: 40px 20px;
+  }
+
+  .tab-buttonCom.active {
+    padding: 14px 10px;
+  }
+
+  .tab-buttonCom {
+    justify-content: flex-start;
+  }
+}

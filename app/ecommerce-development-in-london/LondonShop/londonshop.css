@@ -1,0 +1,135 @@
+/* === Conversions1 Section Styling === */
+.Conversions1-wrapper {
+  padding: 80px 50px;
+  background-color: #ffffff;
+}
+
+.Conversions1-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.Conversions1-left {
+  flex: 1;
+  min-width: 320px;
+}
+
+.Conversions1-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.Conversions1-dashlist {
+  list-style: disc;
+  padding: 20px 0px 10px 0px;
+  margin: 0;
+  margin-left: 22px;
+}
+
+.Conversions1-dashlist li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #111;
+  /* display: flex; */
+  align-items: baseline;
+}
+
+.Conversions1-dashlist li span {
+  font-weight: 600;
+  margin-right: 8px;
+  color: #000;
+}
+
+.Conversions1-left p {
+  font-size: 15px;
+  color: #444;
+}
+
+.Conversions1-right {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.Conversions1-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 1024px) {
+  .Conversions1-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .Conversions1-left,
+  .Conversions1-right {
+    width: 100%;
+    display: contents;
+  }
+
+  .Conversions1-left h2 {
+    font-size: 26px;
+  }
+
+  .Conversions1-dashlist {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  .Conversions1-wrapper {
+    padding: 60px 30px;
+  }
+  .Conversions1-left h2 {
+    font-size: 22px;
+  }
+
+  .Conversions1-left li,
+  .Conversions1-left p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .Conversions1-wrapper {
+    padding: 50px 12px;
+  }
+
+  .Conversions1-left h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Conversions1-dashlist li {
+    font-size: 13.5px;
+    line-height: 1.8;
+  }
+
+  .Conversions1-left p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 408px) {
+  .Conversions1-left li {
+    text-align: start;
+  }
+}

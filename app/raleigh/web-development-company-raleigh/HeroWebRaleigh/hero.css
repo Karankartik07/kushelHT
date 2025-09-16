@@ -1,0 +1,105 @@
+.hero-bigCom-dhabi {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://res.cloudinary.com/dxlykgx6w/image/upload/v1757417295/7ebd75e17c5321417c18b1d4b6ca571146e378e1_gnn5rs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+    max-width: 1720px;
+  margin: 0 auto;
+}
+
+.overlay-black {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* prevent content from touching edges on small screens */
+}
+
+.overlay-black h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  max-width: 1020px;
+}
+
+.btn-service {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.btn-service-ec,
+.btn-service-ec1 {
+  padding: 17px 42px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #0b56e4;
+  transition: all 0.5s;
+}
+
+.btn-service-ec {
+  background: #0b56e4;
+  color: white;
+}
+.btn-service-ec:hover {
+  background-color: white;
+  color: #0b56e4;
+}
+
+.btn-service-ec1 {
+  background-color: white;
+  color: #0b56e4;
+}
+.btn-service-ec1:hover {
+  background-color: #0b56e4;
+  color: white;
+}
+
+/* 🔽 Responsive styles for tablets and mobiles only */
+@media screen and (max-width: 768px) {
+  .overlay-black h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .btn-service {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-service-ec,
+  .btn-service-ec1 {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero-bigCom {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .overlay-black {
+    padding: 0 15px;
+  }
+
+  .overlay-black h1 {
+    font-size: 26px;
+  }
+
+  .btn-service {
+    gap: 12px;
+  }
+}

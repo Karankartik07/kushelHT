@@ -1,0 +1,218 @@
+.containerEcom {
+    display: flex;
+    max-width: 1720px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    /* padding: 80px 0px 60px 0px; */
+    /* padding-bottom: 14rem; */
+    background-color: #ffffff;
+  }
+  
+  .left-sectionEcom {
+    width: 36%;
+    position: sticky;
+    top: 9rem;
+    align-self: flex-start;
+  }
+  
+  .left-sectionEcom h6 {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .left-sectionEcom h1 {
+    line-height: 44px;
+    font-size: 38px;
+    margin: 20px 0;
+    color: #000000;
+  }
+  
+  .left-sectionEcom p {
+    padding: 15px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #222222;
+  }
+  
+  .left-sectionEcom button {
+    background: transparent;
+    color: #ffffff;
+    padding: 14px 22px;
+    font-size: 16px;
+    background-color: #0c61ff;
+    cursor: pointer;
+    margin-top: 31px;
+    margin-bottom: 30px;
+    border: 1.5px solid #0c61ff;
+    padding: 20px;
+    position: relative;
+    box-shadow: 5px 5px 0 rgb(0, 0, 0);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .left-sectionEcom button:hover {
+    box-shadow: 5px 5px 0 #0c61ff;
+    border: 1.5px solid black;
+    background-color: white;
+    color: #0c61ff;;
+  }
+  
+  .right-sectionEcom {
+    width: 50%;
+    overflow-y: auto;
+    max-height: auto;
+    padding-right: 20px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  
+  .content-blockEcom {
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+    padding: 20px;
+    position: relative;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .content-blockEcom:hover {
+    box-shadow: 5px 5px 0 #0c61ff;
+  }
+  
+  .content-blockEcom::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -9px;
+    bottom: -9px;
+    left: 0;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    z-index: -1;
+  }
+  
+  .content-blockEcom h3 {
+    font-size: 24px;
+    margin-bottom: 22px;
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .content-blockEcom p {
+    padding: 15px 0px 0px 0px;
+    font-size: 15px;
+    color: #000000;
+    line-height: 27px;
+  }
+  
+   
+  @media screen and (max-width: 1024px) {
+    .containerEcom {
+      flex-direction: column;
+      padding: 40px;
+      /* padding-bottom: 8rem; */
+    }
+  
+    .left-sectionEcom {
+      width: 100%;
+      position: relative;
+      top: 0;
+      align-self: center;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  
+    .right-sectionEcom {
+      width: 103%;
+      padding-right: 0;
+    }
+  
+    .content-blockEcom {
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .content-blockEcom h3 {
+      font-size: 20px;
+      /* text-align: center; */
+      font-weight: 500;
+    }
+  
+    .content-blockEcom p {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .left-sectionEcom h6 ,
+    .left-sectionEcom h2 {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .containerEcom {
+      padding: 30px;
+    }
+  
+    .left-sectionEcom h1 {
+      font-size: 28px;
+    }
+  
+    .left-sectionEcom p {
+      font-size: 15px;
+    }
+  
+    .left-sectionEcom button {
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+  
+    .content-blockEcom {
+      padding: 10px;
+      width: 97%;
+      text-align: center;
+    }
+  
+    .content-blockEcom h3 {
+      font-size: 18px;
+      text-align: left;
+    }
+  
+    .content-blockEcom p {
+      font-size: 13px;
+      line-height: normal;
+    }
+  }
+  @media (max-width:450px){
+    .containerEcom {
+        width: 100%;
+        padding: 40px 30px 20px;
+    }
+    .left-sectionEcom h1{
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .left-sectionEcom p{
+      /* text-align: center; */
+      font-size: 14px;
+      line-height: 25px;
+      
+    }
+    .left-sectionEcom{
+     text-align: left;
+    }
+
+    /* .left-sectionEcom h6 {
+      text-align: center;
+    }
+
+    .left-sectionEcom h2 {
+      text-align: center;
+    } */
+  }

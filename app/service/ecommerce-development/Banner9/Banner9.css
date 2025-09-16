@@ -1,0 +1,514 @@
+.projectsSectionKcom{
+  /* width: 90%; */
+  margin: auto;
+  max-width: 1720px;
+  margin-top: 0.3rem;
+  padding: 50px 50px;
+}
+
+.projectsHeaderKcom {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.textKcom h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.textKcom p {
+  font-size: 1.1rem;
+  color: #000 !important;
+  margin-top: 10px;
+}
+
+.viewAllBtnKcom {
+  padding: 18px 24px;
+  border: 2px solid #000;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  box-shadow: 5px 5px 0px #0c61ff;
+}
+
+.viewAllBtnKcom:hover {
+  background: #0c61ff;
+  color: #fff;
+  border: 1px solid #0c61ff;
+  box-shadow: none;
+}
+
+.b2b-sectionKcom { 
+  text-align: center;
+  padding: 43px 0px 0px;
+}
+
+.hrKcomKu{
+  margin-top: 10px;
+}
+.b2b-headsssKcom {
+  font-size: 40px;
+  margin-bottom: 45px;
+  line-height: 68px;
+  font-weight: 500;
+}
+#right {
+margin-top: 0px;
+}
+.b2b-contentKcom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.left-b2b-cardsKcom,
+.right-b2b-cardsKcom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+.right-b2b-cardsKcom {
+  margin-top: 7rem;
+}
+
+
+
+.left-b2b-cardKcom:hover{
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  /* transform: translateY(-5px); */
+}
+
+.left-b2b-cardKcom{
+  position: relative;
+  background: #fff;
+
+  text-align: left;
+  width: 529px;
+  max-width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+
+}
+.left-b2b-cardKcom-2{
+position: relative;
+background: #fff;
+bottom: 35px;
+
+text-align: left;
+width: 529px;
+max-width: 80%;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+overflow: hidden;
+}
+.left-b2b-cardKcom-3{
+position: relative;
+background: #fff;
+bottom: 70px;
+
+text-align: left;
+width: 529px;
+max-width: 80%;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+overflow: hidden;
+}
+.left-b2b-cardKcom-2:hover, .left-b2b-cardKcom-3:hover{
+
+transform: translateY(-5px);
+}
+.right-b2b-cardKcom{
+
+ position: relative;
+  background: #fff;
+  /* border: 1px solid #80808045; */
+  /* border-radius: 10px; */
+  text-align: left;
+  width: 529px;
+  max-width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.left-b2b-cardKcom:hover,
+.right-b2b-cardKcom:hover {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  transform: translateY(-5px);
+}
+
+.b2b-logoKcom {
+  overflow: hidden; 
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.b2b-logoKcom img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease-in-out;
+}
+
+.left-b2b-cardKcom:hover .b2b-logoKcom img,
+.right-b2b-cardKcom:hover .b2b-logoKcom img {
+  transform: scale(1.03);  
+}
+
+
+
+
+.b2b-btnKcom  p{
+  font-size: 16px;
+}
+.b2b-btnKcom {
+  font-weight: 600;
+  color: #000000;
+  padding:7px;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 30px; */
+  gap: 15px;
+}
+
+.b2b-btnKcom:hover {
+  color: #000000;
+}
+
+.b2b-btnKcom img {
+  width: 45px;
+  height: 45px;
+}
+
+/* ======== Responsive Adjustments ======== */
+@media (max-width: 1200px) {
+  .projectsSectionKcom{
+    padding: 10px 10px 40px;
+  }
+  .b2b-contentKcom {
+      flex-direction: column;
+      align-items: center;
+      gap: 0 !important;
+  }
+
+  .left-b2b-cardsKcom,
+  .right-b2b-cardsKcom {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  .left-b2b-cardKcom{
+    margin: 25px;
+  }
+  .left-b2b-cardKcom-2{
+    margin: 30px;
+  }
+
+  .right-b2b-cardsKcom {
+      margin-top: -36px;
+      width: 588px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .b2b-logoKcom img {
+    width: 540px  ;
+  }
+  .projectsSectionKcom{
+    padding: 10px;
+  }
+  .b2b-head {
+    width: 100%;
+      font-size: 42px;
+      line-height: 46px;
+  }
+
+  .b2b-headss {
+      font-size: 26px;
+  }
+
+  .b2b-headsss {
+      font-size: 36px;
+  }
+
+  .b2b-para,
+  .b2b-paraa {
+      font-size: 16px;
+      line-height: 28px;
+      padding: 0 15px;
+  }
+
+  .left-b2b-cardKcom,.left-b2b-cardKcom-2,.left-b2b-cardKcom-3
+  .right-b2b-card {
+      width: 85%;
+  }
+
+  .b2b-btnKcom {
+      font-size: 18px;
+      /* margin: 25px; */
+  }
+
+  .b2b-btnKcom img {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-b2b-cardsKcom{
+    margin-top: 0;
+  }
+  .projectsSectionKcom{
+    padding: 40px 30px;
+  }
+  .b2b-sectionKcom {
+    padding: 0px;
+  }
+  .textKcom p{
+    text-align: center;
+ 
+  }
+  .projectsHeaderKcom {
+    width: 100%;
+    padding: 17px;
+    flex-direction: column;
+  }
+  .viewAllBtnKcom {
+    padding: 12px 35px;
+  }
+  .textKcom h2{
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .left-b2b-cardsKcom,
+  .right-b2b-cardsKcom {
+    width: auto !important;
+  }
+  .left-b2b-cardKcom-2 {
+    bottom: 50px;
+  }
+  .left-b2b-cardKcom-3 {
+    bottom: 70px;
+  }
+  .b2b-head {
+    width: 100%;
+      font-size: 36px;
+      line-height: 42px;
+  }
+
+  .b2b-headss {
+      font-size: 24px;
+  }
+
+  .b2b-headsss {
+      font-size: 32px;
+  }
+
+  .b2b-para,
+  .b2b-paraa {
+      font-size: 15px;
+      line-height: 26px;
+  }
+
+  .left-b2b-cardKcom,.left-b2b-cardKcom-2,.left-b2b-cardKcom-3
+  .right-b2b-card {
+      width: 90%;
+  }
+
+  .b2b-btnKcom {
+      font-size: 18px;
+      /* margin: 20px; */
+  }
+
+  .b2b-btnKcom img {
+      width: 35px;
+      height: 35px;
+  }
+}
+
+.viewAllBtnKcom {
+  padding: 12px 35px
+}
+
+@media (max-width: 576px) {
+  .projectsSectionKcom{
+    padding:40px 10px;
+  
+  }
+  .left-b2b-cardsKcom,
+    .right-b2b-cardsKcom {
+      width: 100% !important;
+      gap: 40px;
+    }
+  .projectsHeaderKcom {
+    margin-bottom: 0;
+    gap: 22px;
+  }
+  .textKcom p{
+    text-align: center;
+    font-size: 14px;
+  }
+  .b2b-head {
+    width: 100%;
+      font-size: 32px;
+      line-height: 38px;
+  }
+.button-b2 {
+    font-size: 12px;
+  }
+.b2b-sectionKcom{
+  padding: 10px;
+  gap: 20px;
+} 
+  .b2b-headss {
+      font-size: 22px;
+  }
+
+  .b2b-headsss {
+      font-size: 28px;
+  }
+
+  .b2b-para,
+  .b2b-paraa {
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  .left-b2b-cardKcom,.left-b2b-cardKcom-2,.left-b2b-cardKcom-3
+  .right-b2b-card {
+      width: 95%;
+  }
+
+  .b2b-btnKcom {
+      font-size: 16px;
+      margin: 15px;
+  }
+
+  .b2b-btnKcom img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .right-b2b-cardsKcom {
+    gap:35px;
+    margin-top: -36px;
+  }
+
+  .left-b2b-cardKcom-2 {
+    margin: 15px 30px;
+  }
+
+  .left-b2b-cardKcom-3 {
+    /* bottom:30px; */
+  }
+}
+
+@media(max-width:493px){
+  #human{
+    font-size: 13px !important;
+    
+  }
+}
+
+@media (max-width: 400px) {
+  .projectsSectionKcom{
+    padding: 40px 10px;
+  }
+  #human{
+    font-size: 10px !important;
+    
+  }
+  .b2b-head {
+    width: 100%;
+      font-size: 27px;
+      line-height: 34px;
+  }
+
+  .b2b-headss {
+      font-size: 20px;
+      margin-bottom: 2rem;
+  }
+
+  .b2b-headsss {
+      font-size: 26px;
+      text-align: center;
+      margin: 21px auto;
+  }
+
+  .b2b-para,
+  .b2b-paraa {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+  }
+
+  .b2b-btnKcom {
+      font-size: 14px;
+      /* margin-bottom: 22px; */
+      margin: 0px !important;
+      font-size: 12px;
+      margin-left: 0;
+      margin-right: 0;
+      /* gap: 80px; */
+      align-items: center;
+      /* text-align: center; */
+      justify-content: space-between;
+  }
+  .b2b-btnKcom p{
+    font-size: 12px;
+  }
+
+  .b2b-btnKcom img {
+      width: 25px;
+      height: 25px;
+  }
+  
+}
+
+
+
+
+.b2b-logoKcom {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-linkCom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+padding: 16px;
+display: flex;
+
+  border-radius: 59px;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.b2b-logoKcom:hover .hover-linkCom {
+  opacity: 1;
+}

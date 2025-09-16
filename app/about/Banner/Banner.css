@@ -1,0 +1,217 @@
+.aboutBannerSeC {
+  background-color: #e4edf3;
+  padding-top: 9rem;
+}
+
+.aboutBannerMain {
+  max-width: 1720px;
+  padding: 50px 50px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 7%; 
+  flex-wrap: nowrap;
+}
+
+.aboutBannerMain .Kushaboutban , .aboutBannerMain .KushaboupaImage{
+  flex: 0 0 auto;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 1100px) {
+  .aboutBannerMain {
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    flex-wrap: nowrap;
+  }
+
+  .aboutBannerMain .Kushaboutban , .aboutBannerMain .KushaboupaImage{
+  flex: 0 0 auto;
+  width: 100%; 
+  box-sizing: border-box;
+}
+}
+
+.KushaboutH2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.KushaboutH2 span {
+  color: #0c61ff;
+}
+
+.Kushaboupara {
+  font-size: 16px;
+  width: 650px;
+  color: #6f6b6b;
+  line-height: 26px;
+  padding: 10px 0px 20px 0px;
+}
+
+.Kushaboupara p {
+  color: black;
+}
+
+.Kushabouparbtn button {
+  padding: 10px 20px;
+  gap: 10px;
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  color: #0c61ff;
+  border: 1px solid #0c61ff;
+}
+
+.Kushabouparbtn button:hover {
+  background-color: #0c61ff;
+  border: 1px solid #0c61ff;
+  color: white;
+}
+
+.ourAboutpra p {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+.aboutImagKush {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.aboutImagKush img {
+  width: 100px;
+  height: auto;
+}
+
+.aboutimgkush {
+  width: 180px !important;
+  height: auto !important;
+}
+
+.KushaboupaImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: auto; 
+}
+
+.KushaboupaImage img {
+  width: 600px;
+}
+
+@media(max-width: 1100px) {
+  .aboutBannerMain {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .flex-new-banner-btns{
+    justify-content: center;
+  }
+
+  .Kushaboupara {
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .KushaboupaImage img {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .KushaboutH2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .Kushabouparbtn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Kushaboupara p {
+    text-align: center;
+  }
+
+  .aboutImagKush {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ourAboutpra p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .aboutBannerSeC {
+    margin-top: 50px;
+    padding: 90px 20px 40px;
+  }
+
+  .KushaboutH2 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .Kushaboupara {
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .Kushabouparbtn button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .aboutImagKush img {
+    width: 80px;
+  }
+
+  .KushaboupaImage img {
+    width: 100%;
+  }
+
+  .ourAboutpra p {
+    text-align: center;
+  }
+}
+
+.Kushaboutban{
+  padding-bottom: 20px;
+}
+
+@media (max-width:450px) {
+  .aboutBannerMain {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .Kushaboupara p {
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .ourAboutpra p {
+    text-align: center;
+  }
+
+}

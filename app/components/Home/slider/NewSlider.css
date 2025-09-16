@@ -1,0 +1,89 @@
+.logo-container {
+  width: 100%;
+  background-color: #f5f3ef;
+  padding: 50px 0;
+}
+
+.logo-heading {
+  margin-bottom: 30px;
+}
+
+.logo-sliders {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logo-heading p {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  max-width:90%;
+  margin:auto;
+  line-height:normal !important;
+}
+
+.custom-slider {
+  margin: 20px 0px;
+}
+
+.slide-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 5px;
+  width: 90% !important;
+  height: 150px !important;
+  background-color: #fff;
+}
+
+.slide-item > img {
+  width: 52%;
+  object-fit: contain;
+}
+
+.black-rhino-img,.madfish-img {
+  width: 45% !important;
+}
+
+.ride-img,.armore-img {
+  width: 40% !important;
+}
+
+@media (max-width: 1024px) {
+  .logo-heading p {
+    font-size: 24px;
+  }
+
+  .slide-item > img {
+    width: 52%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-heading p {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+  /* .slide-item img {
+    width: 75%;
+    height: 70%;
+    object-fit: cover;
+  } */
+
+  .slide-item {
+    height: 120px !important;
+  }
+  .slide-item > img {
+    width: 65%;
+    object-fit: contain;
+  }
+  
+  .black-rhino-img,.madfish-img {
+    width: 50% !important;
+  }
+  
+  .ride-img,.armore-img {
+    width: 50% !important;
+  }
+}

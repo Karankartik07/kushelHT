@@ -1,0 +1,171 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headless-pwa {
+    background-color: white;
+    text-align: center;
+  }
+  
+  .human-pwa {
+    max-width: 1720px;
+    padding: 50px 50px;
+    margin: auto;
+  }
+  
+  .headless-pwa-title {
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+  }
+  
+  .headless-pwa-bold {
+    font-weight: bold;
+  }
+  
+  .headless-pwa-bolld {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .headless-pwa-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 17px;
+    background-color: #0c61ff;
+    gap: 10px;
+  }
+  
+  .headless-pwa-tab {
+    background-color: #0c61ff;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .headless-pwa-tab.active {
+    background-color: #fff;
+    color: #111;
+    transform: scale(1.05);
+  }
+  
+  .headless-pwa-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .headless-pwa-text-section {
+    flex: 1 1 500px;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .headless-pwa-text-section h3 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #222;
+  }
+  
+  .headless-pwa-text-section p {
+    color: #111;
+    font-size: 19px;
+    padding-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .headless-pwa-image-section {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .headless-pwa-image-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+@media(max-width:1121px){
+  .headless-pwa-title{
+ line-height: normal;
+  }
+}
+  @media (max-width: 1024px) {
+    .headless-pwa {
+      /* padding: 20px 32px 0px 32px; */
+    }
+    .headless-pwa-tabs {
+      margin: 15px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+    }
+    .headless-pwa-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .headless-pwa-text-section {
+      max-width: 100%;
+      text-align: center;
+      max-height: fit-content;
+    }
+  
+    .headless-pwa-image-section {
+      max-width: 100%;
+    }
+  
+    .headless-pwa-image-section img {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headless-pwa-tabs {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      padding: 10px;
+    }
+    .headless-pwa-content{
+      padding: 0;
+      gap: 0;
+    }
+  
+    .headless-pwa-tab {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+    }
+  
+    .headless-pwa-text-section p {
+      font-size: 16px;
+    }
+  
+    .headless-pwa-image-section img {
+      max-width: 250px;
+    }
+    .headless-pwa-title{
+      font-size: 22px !important;
+    }
+    .headless-pwa-text-section h3{
+      font-size: 18px;
+    }
+  }
+  

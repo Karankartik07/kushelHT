@@ -1,0 +1,153 @@
+.moniter-commerce-section {
+    padding: 50px 50px;
+    background-color: #fff; 
+    text-align: center;
+  }
+  
+  .moniter-commerce-title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 550;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    color: #111;
+  }
+  
+  .moniter-commerce-title span {
+    font-weight: bold;
+  }
+  
+  .moniter-comparison-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .moniter-comparison-box {
+    flex: 1 1 420px;
+    max-width: 500px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .moniter-comparison-header {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .moniter-traditional,
+  .moniter-headless {
+    background-color: #0c61ff;
+  }
+  
+  .moniter-comparison-image {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .moniter-comparison-list {
+    text-align: left;
+    padding-left: 10px;
+    list-style: none;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .moniter-comparison-list li {
+    margin: 10px 0;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icons */
+  .moniter-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 10px;
+    color: white;
+    flex-shrink: 0;
+  }
+  
+  .moniter-icon-red {
+    background-color: #e74c3c;
+  }
+  
+  .moniter-icon-green {
+    background-color: #2ecc71;
+  }
+  
+  /* ---------- Responsive Section Below ---------- */
+  
+  @media (max-width: 768px) {
+    .moniter-commerce-title {
+      font-size: 1.5rem;
+      padding: 0 10px;
+      
+    }
+    .moniter-comparison-container{
+      padding-top: 20px;
+    }
+  
+    .moniter-comparison-box {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .moniter-comparison-list {
+      font-size: 1rem;
+    }
+  
+    .moniter-comparison-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .moniter-commerce-section {
+      padding: 40px 15px;
+    
+    }
+  
+    .moniter-commerce-title {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  
+    .moniter-comparison-header {
+      font-size: 17px;
+      padding: 16px;
+      text-align: center;
+    }
+  
+    .moniter-icon {
+      width: 24px;
+      height: 24px;
+      font-size: 10px;
+      margin-right: 8px;
+    }
+  
+    .moniter-comparison-list {
+      font-size: 0.95rem;
+    }
+  }
+  

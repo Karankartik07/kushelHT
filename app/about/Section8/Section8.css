@@ -1,0 +1,165 @@
+.coreMainConta {
+
+  background: linear-gradient(90deg, #f8f8f890, #e9f0ffa9);
+}
+
+.core-values-container {
+  max-width: 1720px;
+
+  margin: auto;
+  color: black;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.corepara {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.core-values-title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.888);
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.core-values-grid {
+  padding: 37px 0px 27px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .core-values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+   .core-value-card  { 
+    padding:30px 0px !important;
+  }
+
+}
+
+@media (max-width:750px) {
+  .core-value-card { 
+    padding: 0px ;
+  }
+
+  .coreMainConta {
+    padding: 0;
+  }
+
+  .core-values-title {
+    font-size: 30px;
+  }
+
+}
+
+.core-value-card {
+  color: #1e1e1e;
+  padding: 30px 20px;
+  text-align: left;
+  border: 2px solid #3b83f6ca;
+  border-top: none;
+  border-left: none;
+}
+
+.core-values-grid>.core-value-card:last-child {
+  border-bottom: none;
+}
+
+.core-values-grid>.core-value-card:nth-child(2n) {
+  border-right: none;
+}
+
+.core-values-grid>.core-value-card:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.icon-title-wrapper {
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.core-value-icon {
+  font-size: 3rem;
+}
+
+.core-value-heading {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.core-value-description {
+  padding-left: 73px;
+  font-size: 18px;
+  margin-top: 5px;
+  color: black;
+}
+
+.innovation-creativity .core-value-icon {
+  color: #4ade80;
+}
+
+.customer-first .core-value-icon {
+  color: #a78bfa;
+}
+
+.transparency .core-value-icon {
+  color: #f87171;
+}
+
+.quality-excellence .core-value-icon {
+  color: #60a5fa;
+}
+
+.collaboration-teamwork .core-value-icon {
+  color: #facc15;
+}
+
+.honest-ethical .core-value-icon {
+  color: #fb923c;
+}
+
+@media(max-width:450px) {
+  .core-value-description {
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .core-values-title {
+    font-size: 25px;
+  }
+
+  .core-value-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .icon-title-wrapper {
+    display: inline;
+  }
+
+  .innovation-creativity .core-value-icon,
+  .customer-first .core-value-icon,
+  .transparency .core-value-icon,
+  .quality-excellence .core-value-icon,
+  .collaboration-teamwork .core-value-icon,
+  .honest-ethical .core-value-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .core-value-card {
+    padding: 0;
+  }
+
+  .core-values-grid {
+    gap: 20px;
+  }
+}

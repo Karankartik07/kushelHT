@@ -1,0 +1,115 @@
+.PortBannerNext{
+  margin-top: 140px;
+}
+.portfolio_main_Banner{
+    max-width: 1720px;
+    margin: auto;
+    padding: 50px 50px;
+    background-color: #e4edf3;
+
+}
+.portfolioBanner{
+    padding: 70px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   gap: 20%;
+}
+.portfolio_Left_Banner{
+    font-size: 48px;
+    width: 600px;
+    font-weight: 600;
+}
+.portfolio_Left_Banner span{
+color: #0c61ff;
+}
+.portfolio_Right_Banner{
+     border-radius: 20px;
+    font-weight: 500;
+    background:#aec8db ;
+  width: 450px;
+    text-align: center;
+    padding: 60px 50px;
+    font-size: 22px;
+} 
+.portfolio_Right_Banner:hover:before {
+  top: 0%;
+  height: 100%;
+}
+.portfolio_Button_Banner{
+    padding-top: 20px;
+    text-align: center;
+}
+.portfolio_Button_Banner button{
+    border: 1px solid #0c61ff;
+    color: #0c61ff;
+    background-color: white;
+padding: 7px 20px;
+font-size: 15px;
+font-weight: 600;
+border-radius: 50px;
+}
+.portfolio_Button_Banner button:hover{
+    background-color: #0c61ff;
+    color: white;
+    border: 1px solid #0c61ff;
+}
+@media screen and (max-width: 1024px) {
+    .portfolio_main_Banner {
+      padding: 40px 30px;
+    }
+  
+    .portfolioBanner {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .portfolio_Left_Banner {
+      font-size: 36px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .portfolio_Right_Banner {
+      width: 100%;
+      padding: 40px 30px;
+    }
+  }
+  
+  /* Mobile Devices (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .portfolio_main_Banner {
+      padding: 30px 20px;
+    }
+  
+    .portfolio_Left_Banner {
+      font-size: 28px;
+    }
+  
+    .portfolio_Right_Banner {
+      font-size: 16px;
+      padding: 30px 20px;
+    }
+  
+    .portfolio_Button_Banner button {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .portfolio_Left_Banner {
+      font-size: 24px;
+    }
+  
+    .portfolio_Right_Banner {
+      font-size: 15px;
+      padding: 25px 15px;
+    }
+  
+    .portfolio_Button_Banner button {
+      font-size: 13px;
+      padding: 8px 20px;
+    }
+  }

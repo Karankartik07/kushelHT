@@ -1,0 +1,24 @@
+.overlay-black{
+       height: 100%;
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-black h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.noida-hero-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://res.cloudinary.com/dxlykgx6w/image/upload/v1756899593/2dda13f68a4db1b5a80fd032808f816b6ea70d73_d3e6oa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+    max-width: 1720px;
+  margin: 0 auto;
+}
